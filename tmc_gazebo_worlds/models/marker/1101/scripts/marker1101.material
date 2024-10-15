@@ -1,0 +1,15 @@
+material Marker/1101
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture BchThin_Id1101_Size36.png
+        filtering anistropic
+        max_anisotropy 16
+      }
+    }
+  }
+}

@@ -1,0 +1,197 @@
+Current Plugins Dir is: /usr/lib/meshlab/plugins 
+    Reading Param with name MeshLab::Appearance::backgroundBotColor : RichColor
+    Reading Param with name MeshLab::Appearance::backgroundTopColor : RichColor
+    Reading Param with name MeshLab::Appearance::baseLightAmbientColor : RichColor
+    Reading Param with name MeshLab::Appearance::baseLightDiffuseColor : RichColor
+    Reading Param with name MeshLab::Appearance::baseLightSpecularColor : RichColor
+    Reading Param with name MeshLab::Appearance::fancyBLightDiffuseColor : RichColor
+    Reading Param with name MeshLab::Appearance::fancyFLightDiffuseColor : RichColor
+    Reading Param with name MeshLab::Appearance::logAreaColor : RichColor
+    Reading Param with name MeshLab::Appearance::pointDistanceAttenuation : RichBool
+    Reading Param with name MeshLab::Appearance::pointSize : RichFloat
+    Reading Param with name MeshLab::Appearance::pointSmooth : RichBool
+    Reading Param with name MeshLab::Appearance::textureMagFilter : RichEnum
+    Reading Param with name MeshLab::Appearance::textureMinFilter : RichEnum
+    Reading Param with name MeshLab::Decoration::AreaHistParam : RichBool
+    Reading Param with name MeshLab::Decoration::BoxRatio : RichFloat
+    Reading Param with name MeshLab::Decoration::CameraFixedScaleParam : RichFloat
+    Reading Param with name MeshLab::Decoration::CameraRenderScaleType : RichEnum
+    Reading Param with name MeshLab::Decoration::CameraShowCameraDetails : RichBool
+    Reading Param with name MeshLab::Decoration::FixedHistMaxParam : RichFloat
+    Reading Param with name MeshLab::Decoration::FixedHistMinParam : RichFloat
+    Reading Param with name MeshLab::Decoration::FixedHistWidthParam : RichFloat
+    Reading Param with name MeshLab::Decoration::GridBack : RichBool
+    Reading Param with name MeshLab::Decoration::GridColorBack : RichColor
+    Reading Param with name MeshLab::Decoration::GridColorFront : RichColor
+    Reading Param with name MeshLab::Decoration::GridMajor : RichFloat
+    Reading Param with name MeshLab::Decoration::GridMinor : RichFloat
+    Reading Param with name MeshLab::Decoration::GridSnap : RichBool
+    Reading Param with name MeshLab::Decoration::HistBinNumParam : RichInt
+    Reading Param with name MeshLab::Decoration::NormalLength : RichFloat
+    Reading Param with name MeshLab::Decoration::ProjRasterAlpha : RichDynamicFloat
+    Reading Param with name MeshLab::Decoration::ProjRasterLighting : RichBool
+    Reading Param with name MeshLab::Decoration::ProjRasterOnAllMeshes : RichBool
+    Reading Param with name MeshLab::Decoration::ProjRasterUseVBO : RichBool
+    Reading Param with name MeshLab::Decoration::SSAORadius : RichFloat
+    Reading Param with name MeshLab::Decoration::ShadowIntensityVal : RichDynamicFloat
+    Reading Param with name MeshLab::Decoration::ShadowMethod : RichEnum
+    Reading Param with name MeshLab::Decoration::ShowBorderFlag : RichBool
+    Reading Param with name MeshLab::Decoration::ShowMeshCameras : RichBool
+    Reading Param with name MeshLab::Decoration::ShowNonRegular : RichBool
+    Reading Param with name MeshLab::Decoration::ShowRasterCameras : RichBool
+    Reading Param with name MeshLab::Decoration::ShowSeparatrix : RichBool
+    Reading Param with name MeshLab::Decoration::ShowShadow : RichBool
+    Reading Param with name MeshLab::Decoration::TextureFaceColor : RichBool
+    Reading Param with name MeshLab::Decoration::TextureStyle : RichBool
+    Reading Param with name MeshLab::Decoration::UseFixedHistParam : RichBool
+    Reading Param with name MeshLab::Decoration::VertDotSize : RichDynamicFloat
+[31mvoid DBusMenuExporterPrivate::addAction(QAction*, int)[0m: Already tracking action "Automatic pair Alignement" under id 55 
+[31mvoid DBusMenuExporterPrivate::addAction(QAction*, int)[0m: Already tracking action "Colorize by border distance" under id 63 
+[31mvoid DBusMenuExporterPrivate::addAction(QAction*, int)[0m: Already tracking action "Colorize by distance from a given point" under id 64 
+[31mvoid DBusMenuExporterPrivate::addAction(QAction*, int)[0m: Already tracking action "Colorize curvature (APSS)" under id 67 
+[31mvoid DBusMenuExporterPrivate::addAction(QAction*, int)[0m: Already tracking action "Colorize curvature (RIMLS)" under id 68 
+[31mvoid DBusMenuExporterPrivate::addAction(QAction*, int)[0m: Already tracking action "Compute normals for point sets" under id 73 
+[31mvoid DBusMenuExporterPrivate::addAction(QAction*, int)[0m: Already tracking action "Cut mesh along crease edges" under id 83 
+[31mvoid DBusMenuExporterPrivate::addAction(QAction*, int)[0m: Already tracking action "Disk Vertex Coloring" under id 97 
+[31mvoid DBusMenuExporterPrivate::addAction(QAction*, int)[0m: Already tracking action "Freeze Current Matrix" under id 108 
+[31mvoid DBusMenuExporterPrivate::addAction(QAction*, int)[0m: Already tracking action "MLS projection (APSS)" under id 127 
+[31mvoid DBusMenuExporterPrivate::addAction(QAction*, int)[0m: Already tracking action "MLS projection (RIMLS)" under id 128 
+[31mvoid DBusMenuExporterPrivate::addAction(QAction*, int)[0m: Already tracking action "Marching Cubes (APSS)" under id 129 
+[31mvoid DBusMenuExporterPrivate::addAction(QAction*, int)[0m: Already tracking action "Marching Cubes (RIMLS)" under id 130 
+[31mvoid DBusMenuExporterPrivate::addAction(QAction*, int)[0m: Already tracking action "Per Face Quality according to Triangle shape and aspect ratio" under id 147 
+[31mvoid DBusMenuExporterPrivate::addAction(QAction*, int)[0m: Already tracking action "Project active rasters color to current mesh" under id 156 
+[31mvoid DBusMenuExporterPrivate::addAction(QAction*, int)[0m: Already tracking action "Project active rasters color to current mesh, filling the texture" under id 157 
+[31mvoid DBusMenuExporterPrivate::addAction(QAction*, int)[0m: Already tracking action "Project current raster color to current mesh" under id 158 
+[31mvoid DBusMenuExporterPrivate::addAction(QAction*, int)[0m: Already tracking action "Remove Zero Area Faces" under id 183 
+[31mvoid DBusMenuExporterPrivate::addAction(QAction*, int)[0m: Already tracking action "Reset Current Matrix" under id 186 
+[31mvoid DBusMenuExporterPrivate::addAction(QAction*, int)[0m: Already tracking action "Select Faces by Color" under id 191 
+[31mvoid DBusMenuExporterPrivate::addAction(QAction*, int)[0m: Already tracking action "Select Faces by Face Quality" under id 192 
+[31mvoid DBusMenuExporterPrivate::addAction(QAction*, int)[0m: Already tracking action "Select Faces by Vertex Quality" under id 193 
+[31mvoid DBusMenuExporterPrivate::addAction(QAction*, int)[0m: Already tracking action "Select Faces by view angle" under id 194 
+[31mvoid DBusMenuExporterPrivate::addAction(QAction*, int)[0m: Already tracking action "Select Faces with edges longer than..." under id 196 
+[31mvoid DBusMenuExporterPrivate::addAction(QAction*, int)[0m: Already tracking action "Select Self Intersecting Faces" under id 199 
+[31mvoid DBusMenuExporterPrivate::addAction(QAction*, int)[0m: Already tracking action "Select Vertex Texture Seams" under id 200 
+[31mvoid DBusMenuExporterPrivate::addAction(QAction*, int)[0m: Already tracking action "Select Visible Points" under id 202 
+[31mvoid DBusMenuExporterPrivate::addAction(QAction*, int)[0m: Already tracking action "Select non Manifold Edges " under id 203 
+[31mvoid DBusMenuExporterPrivate::addAction(QAction*, int)[0m: Already tracking action "Select non Manifold Vertices" under id 204 
+[31mvoid DBusMenuExporterPrivate::addAction(QAction*, int)[0m: Already tracking action "Set Raster Camera" under id 206 
+[31mvoid DBusMenuExporterPrivate::addAction(QAction*, int)[0m: Already tracking action "Simplfication: MC Edge Collapse" under id 209 
+[31mvoid DBusMenuExporterPrivate::addAction(QAction*, int)[0m: Already tracking action "Smooths normals on a point sets" under id 215 
+[31mvoid DBusMenuExporterPrivate::addAction(QAction*, int)[0m: Already tracking action "Subdivision Surfaces: Catmull-Clark" under id 223 
+[31mvoid DBusMenuExporterPrivate::addAction(QAction*, int)[0m: Already tracking action "Surface Reconstruction: Poisson" under id 228 
+[31mvoid DBusMenuExporterPrivate::addAction(QAction*, int)[0m: Already tracking action "Texture to Vertex Color (between 2 meshes)" under id 233 
+[31mvoid DBusMenuExporterPrivate::addAction(QAction*, int)[0m: Already tracking action "Tri to Quad by 4-8 Subdivision" under id 248 
+[31mvoid DBusMenuExporterPrivate::addAction(QAction*, int)[0m: Already tracking action "Tri to Quad by smart triangle pairing" under id 249 
+[31mvoid DBusMenuExporterPrivate::addAction(QAction*, int)[0m: Already tracking action "Turn into Quad-Dominant mesh" under id 250 
+[31mvoid DBusMenuExporterPrivate::addAction(QAction*, int)[0m: Already tracking action "Turn into a Pure-Triangular mesh" under id 251 
+[31mvoid DBusMenuExporterPrivate::addAction(QAction*, int)[0m: Already tracking action "UnSharp Mask Color" under id 253 
+[31mvoid DBusMenuExporterPrivate::addAction(QAction*, int)[0m: Already tracking action "Voronoi Vertex Coloring" under id 276 
+Shader directory found '/usr/share/meshlab/shaders', and it contains 19 gdp files
+Shader directory found '/usr/share/meshlab/shaders/shadersrm', and it contains 5 rfx files
+Node 0 geom id = 'shape0-lib'
+Time elapsed: 2 ms
+[31mvoid DBusMenuExporterPrivate::addAction(QAction*, int)[0m: Already tracking action "&Horizontally" under id 406 
+[31mvoid DBusMenuExporterPrivate::addAction(QAction*, int)[0m: Already tracking action "&Vertically" under id 407 
+[31mvoid DBusMenuExporterPrivate::addAction(QAction*, int)[0m: Already tracking action "Top" under id 411 
+[31mvoid DBusMenuExporterPrivate::addAction(QAction*, int)[0m: Already tracking action "Bottom" under id 412 
+[31mvoid DBusMenuExporterPrivate::addAction(QAction*, int)[0m: Already tracking action "Left" under id 413 
+[31mvoid DBusMenuExporterPrivate::addAction(QAction*, int)[0m: Already tracking action "Right" under id 414 
+[31mvoid DBusMenuExporterPrivate::addAction(QAction*, int)[0m: Already tracking action "Front" under id 415 
+[31mvoid DBusMenuExporterPrivate::addAction(QAction*, int)[0m: Already tracking action "Back" under id 416 
+[31mvoid DBusMenuExporterPrivate::addAction(QAction*, int)[0m: Already tracking action "&Horizontally" under id 406 
+[31mvoid DBusMenuExporterPrivate::addAction(QAction*, int)[0m: Already tracking action "&Vertically" under id 407 
+[31mvoid DBusMenuExporterPrivate::addAction(QAction*, int)[0m: Already tracking action "Top" under id 411 
+[31mvoid DBusMenuExporterPrivate::addAction(QAction*, int)[0m: Already tracking action "Bottom" under id 412 
+[31mvoid DBusMenuExporterPrivate::addAction(QAction*, int)[0m: Already tracking action "Left" under id 413 
+[31mvoid DBusMenuExporterPrivate::addAction(QAction*, int)[0m: Already tracking action "Right" under id 414 
+[31mvoid DBusMenuExporterPrivate::addAction(QAction*, int)[0m: Already tracking action "Front" under id 415 
+[31mvoid DBusMenuExporterPrivate::addAction(QAction*, int)[0m: Already tracking action "Back" under id 416 
+[31mvoid DBusMenuExporterPrivate::addAction(QAction*, int)[0m: Already tracking action "&Horizontally" under id 406 
+[31mvoid DBusMenuExporterPrivate::addAction(QAction*, int)[0m: Already tracking action "&Vertically" under id 407 
+[31mvoid DBusMenuExporterPrivate::addAction(QAction*, int)[0m: Already tracking action "Top" under id 411 
+[31mvoid DBusMenuExporterPrivate::addAction(QAction*, int)[0m: Already tracking action "Bottom" under id 412 
+[31mvoid DBusMenuExporterPrivate::addAction(QAction*, int)[0m: Already tracking action "Left" under id 413 
+[31mvoid DBusMenuExporterPrivate::addAction(QAction*, int)[0m: Already tracking action "Right" under id 414 
+[31mvoid DBusMenuExporterPrivate::addAction(QAction*, int)[0m: Already tracking action "Front" under id 415 
+[31mvoid DBusMenuExporterPrivate::addAction(QAction*, int)[0m: Already tracking action "Back" under id 416 
+----- Starting the processing of book3_v5.dae ------
+File Contains 1 Scenes
+Scene 0 contains 1 instance_visual_scene 
+instance_visual_scene 0 refers VisualSceneNode 
+instance_visual_scene VisualSceneNode has 1 children
+Processing Visual Scene child 0 - of type 'node'
+Starting processing <node> with id node
+getTrans form node with tag node
+** instance_geometry with url #shape0-lib (intial mesh size 0 0 T = 0)
+**    instance_geometry has a material binding
+++++ Found 1 instance_material binding
+++++++ material0 -> #material0
+**** Loading a Geometry Mesh **** (initial mesh size 0 0)
+Warning valueStringList returned and emtpy list. nothing inside element with tag 'vcount'
+****** LoadTriangularMesh (initial mesh size 174 0)
+******    material id 'material0' -> '#material0'
+====== searching among library_effects the effect with id 'material0-fx' 
+====== searching among library_images the effect with id 'texture0' 
+====== the image 'texture0' has a 1 init_from nodes text './image/shelf_books.png'
+Found use of Texture ./image/shelf_books.png, adding it to texutres
+****** LoadTriangularMesh (final  mesh size 174 174 - 308 308)
+**** Loading a Geometry Mesh **** (final   mesh size 174 174 - 308 308)
+** instance_geometry with url #shape0-lib (final mesh size 174 174 - 308 308)
+LOG: 0 Opened mesh book3_v5.dae in 17 msec
+LOG: 0 All files opened in 678 msec
+LOG: 0 Loading textures
+LOG: 0 	Texture[   0 ] =  './image/shelf_books.png' (   1024 x   1024 ) -> (   1024 x   1024 )
+      	will be loaded as GL texture id 0  ( 1024 x 1024 )
+[31mvoid DBusMenuExporterPrivate::addAction(QAction*, int)[0m: Already tracking action "&Horizontally" under id 406 
+[31mvoid DBusMenuExporterPrivate::addAction(QAction*, int)[0m: Already tracking action "&Vertically" under id 407 
+[31mvoid DBusMenuExporterPrivate::addAction(QAction*, int)[0m: Already tracking action "Top" under id 411 
+[31mvoid DBusMenuExporterPrivate::addAction(QAction*, int)[0m: Already tracking action "Bottom" under id 412 
+[31mvoid DBusMenuExporterPrivate::addAction(QAction*, int)[0m: Already tracking action "Left" under id 413 
+[31mvoid DBusMenuExporterPrivate::addAction(QAction*, int)[0m: Already tracking action "Right" under id 414 
+[31mvoid DBusMenuExporterPrivate::addAction(QAction*, int)[0m: Already tracking action "Front" under id 415 
+[31mvoid DBusMenuExporterPrivate::addAction(QAction*, int)[0m: Already tracking action "Back" under id 416 
+[31muint DBusMenuExporterDBus::GetLayout(int, int, const QStringList&, DBusMenuLayoutItem&)[0m: Condition failed: menu 
+[31muint DBusMenuExporterDBus::GetLayout(int, int, const QStringList&, DBusMenuLayoutItem&)[0m: Condition failed: menu 
+[31mQVariantMap DBusMenuExporterDBus::getProperties(int, const QStringList&) const[0m: Condition failed: action 
+[31mQVariantMap DBusMenuExporterDBus::getProperties(int, const QStringList&) const[0m: Condition failed: action 
+[31mQVariantMap DBusMenuExporterDBus::getProperties(int, const QStringList&) const[0m: Condition failed: action 
+[31mQVariantMap DBusMenuExporterDBus::getProperties(int, const QStringList&) const[0m: Condition failed: action 
+[31mQVariantMap DBusMenuExporterDBus::getProperties(int, const QStringList&) const[0m: Condition failed: action 
+[31mQVariantMap DBusMenuExporterDBus::getProperties(int, const QStringList&) const[0m: Condition failed: action 
+[31mQVariantMap DBusMenuExporterDBus::getProperties(int, const QStringList&) const[0m: Condition failed: action 
+[31mQVariantMap DBusMenuExporterDBus::getProperties(int, const QStringList&) const[0m: Condition failed: action 
+[31mQVariantMap DBusMenuExporterDBus::getProperties(int, const QStringList&) const[0m: Condition failed: action 
+[31mQVariantMap DBusMenuExporterDBus::getProperties(int, const QStringList&) const[0m: Condition failed: action 
+[31mQVariantMap DBusMenuExporterDBus::getProperties(int, const QStringList&) const[0m: Condition failed: action 
+[31mQVariantMap DBusMenuExporterDBus::getProperties(int, const QStringList&) const[0m: Condition failed: action 
+[31mQVariantMap DBusMenuExporterDBus::getProperties(int, const QStringList&) const[0m: Condition failed: action 
+[31mQVariantMap DBusMenuExporterDBus::getProperties(int, const QStringList&) const[0m: Condition failed: action 
+[31mQVariantMap DBusMenuExporterDBus::getProperties(int, const QStringList&) const[0m: Condition failed: action 
+[31mQVariantMap DBusMenuExporterDBus::getProperties(int, const QStringList&) const[0m: Condition failed: action 
+[31mQVariantMap DBusMenuExporterDBus::getProperties(int, const QStringList&) const[0m: Condition failed: action 
+[31mQVariantMap DBusMenuExporterDBus::getProperties(int, const QStringList&) const[0m: Condition failed: action 
+LOG: 2 Mesh Bounding Box Size 0.253358 0.173189 0.120600
+LOG: 2 Mesh Bounding Box Diag 0.329741 
+LOG: 2 Mesh Volume  is 0.004551
+LOG: 2 Mesh Surface is 0.559280
+LOG: 2 Thin shell barycenter   0.001086   0.082616   0.006443
+LOG: 2 Center of Mass  is -0.002173 0.082749 0.006882
+LOG: 2 Inertia Tensor is :
+LOG: 2     |  0.000016   0.000000  -0.000000 |
+LOG: 2     |  0.000000   0.000030   0.000000 |
+LOG: 2     | -0.000000   0.000000   0.000035 |
+LOG: 2 Principal axes are :
+LOG: 2     |  0.999959   0.009081  -0.000011 |
+LOG: 2     | -0.009081   0.999959   0.000061 |
+LOG: 2     |  0.000012  -0.000061   1.000000 |
+LOG: 2 axis momenta are :
+LOG: 2     |  0.000016   0.000030   0.000035 |
+QWidget::setWindowModified: The window title does not contain a '[*]' placeholder
+[31mvoid DBusMenuExporterPrivate::addAction(QAction*, int)[0m: Already tracking action "&Horizontally" under id 406 
+[31mvoid DBusMenuExporterPrivate::addAction(QAction*, int)[0m: Already tracking action "&Vertically" under id 407 
+[31mvoid DBusMenuExporterPrivate::addAction(QAction*, int)[0m: Already tracking action "Top" under id 411 
+[31mvoid DBusMenuExporterPrivate::addAction(QAction*, int)[0m: Already tracking action "Bottom" under id 412 
+[31mvoid DBusMenuExporterPrivate::addAction(QAction*, int)[0m: Already tracking action "Left" under id 413 
+[31mvoid DBusMenuExporterPrivate::addAction(QAction*, int)[0m: Already tracking action "Right" under id 414 
+[31mvoid DBusMenuExporterPrivate::addAction(QAction*, int)[0m: Already tracking action "Front" under id 415 
+[31mvoid DBusMenuExporterPrivate::addAction(QAction*, int)[0m: Already tracking action "Back" under id 416 

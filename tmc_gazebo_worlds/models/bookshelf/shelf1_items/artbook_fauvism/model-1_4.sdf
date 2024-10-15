@@ -1,0 +1,33 @@
+<?xml version="1.0" ?>
+<sdf version="1.4">
+  <model name="shelf1_artbook_fauvism">
+    <link name="body">
+      <pose>0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>   0.012419   0.000000   0.004076 0 0 0</pose>
+        <mass>0.5</mass>
+        <inertia>
+          <ixx>0.01</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.01</iyy>
+          <iyz>0</iyz>
+          <izz>0.01</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <pose>  -0.000612   0.000000   0.005754 0 0 0</pose>
+        <geometry>
+          <box><size>0.333000 0.028860 0.259000</size></box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://bookshelf/shelf1_items/artbook_fauvism/artbook_fauvism.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+  </model>
+</sdf>

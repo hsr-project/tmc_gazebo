@@ -1,0 +1,29 @@
+<?xml version="1.0" ?>
+<sdf version="1.4">
+    <model name="bookshelf">
+      <static>true</static>
+      <link name="body">
+        <visual name="visual">
+          <geometry>
+            <mesh><uri>model://bookshelf/shelf3/shelf3.dae</uri></mesh>
+          </geometry>
+        </visual>
+        <collision name="bookshelf">
+          <pose>0 1.22 0 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>3.0 2.44 0.32</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>100</mu>
+                <mu2>50</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+      </link>
+    </model>
+</sdf>

@@ -1,0 +1,945 @@
+<?xml version="1.0" ?>
+<sdf version="1.4">
+    <model name='counter_wagon'>
+      <link name='link'>
+        <pose>0.0 0.0 0.0 0 0 0</pose>
+        <inertial>
+          <mass>10.0</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <visual name='left_board'>
+          <pose>-0.235 0.0085 0.4475 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.43 0.017 0.761</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://base_materials/marble/scripts</uri>
+              <uri>model://base_materials/marble/textures</uri>
+              <name>marble/001</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='collision_left_board'>
+          <pose>-0.235 0.0085 0.4475 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.43 0.017 0.761</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='center_vertical_board1'>
+          <pose>-0.235 0.3385 0.4475 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.43 0.017 0.761</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://base_materials/marble/scripts</uri>
+              <uri>model://base_materials/marble/textures</uri>
+              <name>marble/001</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='collision_center_vertical_board1'>
+          <pose>-0.235 0.3385 0.4475 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.43 0.017 0.761</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='center_vertical_board2'>
+          <pose>-0.235 0.8785 0.4475 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.43 0.017 0.761</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://base_materials/marble/scripts</uri>
+              <uri>model://base_materials/marble/textures</uri>
+              <name>marble/001</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='collision_center_vertical_board2'>
+          <pose>-0.235 0.8785 0.4475 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.43 0.017 0.761</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='center_horizon_board1'>
+          <pose>-0.235 0.6085 0.3105 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.42 0.523 0.017</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://base_materials/marble/scripts</uri>
+              <uri>model://base_materials/marble/textures</uri>
+              <name>marble/001</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='collision_center_horizon_board1'>
+          <pose>-0.235 0.6085 0.3105 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.42 0.523 0.017</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='center_horizon_board2'>
+          <pose>-0.235 1.0215 0.3105 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.42 0.303 0.017</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://base_materials/marble/scripts</uri>
+              <uri>model://base_materials/marble/textures</uri>
+              <name>marble/001</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='collision_center_horizon_board2'>
+          <pose>-0.235 1.0215 0.3105 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.42 0.303 0.017</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='right_board'>
+          <pose>-0.235 1.1815 0.4475 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.43 0.017 0.761</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://base_materials/marble/scripts</uri>
+              <uri>model://base_materials/marble/textures</uri>
+              <name>marble/001</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='collision_right_board'>
+          <pose>-0.235 1.1815 0.4475 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.43 0.017 0.761</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='top_board'>
+          <pose>-0.225 0.595 0.839 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.45 1.190 0.022</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://base_materials/marble/scripts</uri>
+              <uri>model://base_materials/marble/textures</uri>
+              <name>marble/001</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='collision_top_board'>
+          <pose>-0.225 0.595 0.839 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.45 1.190 0.022</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='bottom_board'>
+          <pose>-0.235 0.595 0.0585 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.43 1.190 0.017</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://base_materials/marble/scripts</uri>
+              <uri>model://base_materials/marble/textures</uri>
+              <name>marble/001</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='collision_bottom_board'>
+          <pose>-0.235 0.595 0.0585 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.43 1.190 0.017</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='top_drawer1'>
+          <pose>-0.23 0.1735 0.778 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.42 0.313 0.1</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://base_materials/marble/scripts</uri>
+              <uri>model://base_materials/marble/textures</uri>
+              <name>marble/001</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='collision_top_drawer1'>
+          <pose>-0.23 0.1735 0.778 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.42 0.313 0.1</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='top_drawer1_handle'>
+          <pose>0 0.1735 0.778 0 0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://counter_wagon/meshes/drawer_handle1.dae</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://base_materials/color/scripts</uri>
+              <name>hsr_color/grey</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='collision_top_drawer1_handle'>
+          <pose>0 0.1735 0.778 0 0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://counter_wagon/meshes/drawer_handle1.dae</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='top_drawer2'>
+          <pose>-0.23 0.6085 0.778 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.42 0.523 0.1</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://base_materials/marble/scripts</uri>
+              <uri>model://base_materials/marble/textures</uri>
+              <name>marble/001</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='collision_top_drawer2'>
+          <pose>-0.23 0.6085 0.778 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.42 0.523 0.1</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='top_drawer2_handle'>
+          <pose>0 0.6085 0.778 0 0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://counter_wagon/meshes/drawer_handle1.dae</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://base_materials/color/scripts</uri>
+              <name>hsr_color/grey</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='collision_top_drawer2_handle'>
+          <pose>0 0.6085 0.778 0 0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://counter_wagon/meshes/drawer_handle1.dae</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='top_drawer3'>
+          <pose>-0.23 1.030 0.778 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.42 0.286 0.1</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://base_materials/marble/scripts</uri>
+              <uri>model://base_materials/marble/textures</uri>
+              <name>marble/001</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='collision_top_drawer3'>
+          <pose>-0.23 1.030 0.778 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.42 0.286 0.1</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='top_drawer3_handle'>
+          <pose>0 1.030 0.778 0 0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://counter_wagon/meshes/drawer_handle1.dae</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://base_materials/color/scripts</uri>
+              <name>hsr_color/grey</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='collision_top_drawer3_handle'>
+          <pose>0 1.030 0.778 0 0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://counter_wagon/meshes/drawer_handle1.dae</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='bottom_drawer1'>
+          <pose>-0.23 0.6085 0.1845 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.42 0.523 0.235</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://base_materials/marble/scripts</uri>
+              <uri>model://base_materials/marble/textures</uri>
+              <name>marble/001</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='collision_bottom_drawer1'>
+          <pose>-0.23 0.6085 0.1845 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.42 0.523 0.235</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='bottom_drawer1_handle'>
+          <pose>0 0.6085 0.1845 0 0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://counter_wagon/meshes/drawer_handle1.dae</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://base_materials/color/scripts</uri>
+              <name>hsr_color/grey</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='collision_bottom_drawer1_handle'>
+          <pose>0 0.6085 0.1845 0 0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://counter_wagon/meshes/drawer_handle1.dae</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='bottom_drawer2'>
+          <pose>-0.23 1.030 0.1845 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.42 0.286 0.235</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://base_materials/marble/scripts</uri>
+              <uri>model://base_materials/marble/textures</uri>
+              <name>marble/001</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='collision_bottom_drawer2'>
+          <pose>-0.23 1.030 0.1845 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.42 0.286 0.235</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='bottom_drawer2_handle'>
+          <pose>0 1.030 0.1845 0 0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://counter_wagon/meshes/drawer_handle1.dae</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://base_materials/color/scripts</uri>
+              <name>hsr_color/grey</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='collision_bottom_drawer2_handle'>
+          <pose>0 1.030 0.1845 0 0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://counter_wagon/meshes/drawer_handle1.dae</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='door'>
+          <pose>-0.23 0.1735 0.3975 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.42 0.313 0.661</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://base_materials/marble/scripts</uri>
+              <uri>model://base_materials/marble/textures</uri>
+              <name>marble/001</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='collision_door'>
+          <pose>-0.23 0.1735 0.3975 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.42 0.313 0.661</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='door_handle'>
+          <pose>0 0.28 0.620 1.5708 0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://counter_wagon/meshes/drawer_handle1.dae</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://base_materials/color/scripts</uri>
+              <name>hsr_color/grey</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='collision_door_handle'>
+          <pose>0 0.28 0.620 1.5708 0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>model://counter_wagon/meshes/drawer_handle1.dae</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='back_board1'>
+          <pose>-0.440 0.6085 0.429 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.02 0.523 0.2</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://base_materials/marble/scripts</uri>
+              <uri>model://base_materials/marble/textures</uri>
+              <name>marble/001</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='collision_back_board1'>
+          <pose>-0.440 0.6085 0.429 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.02 0.523 0.2</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='back_board2'>
+          <pose>-0.440 1.030 0.429 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.02 0.286 0.2</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://base_materials/marble/scripts</uri>
+              <uri>model://base_materials/marble/textures</uri>
+              <name>marble/001</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='collision_back_board2'>
+          <pose>-0.440 1.030 0.429 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.02 0.286 0.2</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='right_front_caster'>
+          <pose>-0.0615 1.165 0.025 0 1.5708 0</pose>
+          <geometry>
+            <cylinder>
+              <radius>0.025</radius>
+              <length>0.035</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Black</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='collision_right_front_caster'>
+          <pose>-0.0615 1.165 0.025 0 1.5708 0</pose>
+          <geometry>
+            <cylinder>
+              <radius>0.025</radius>
+              <length>0.035</length>
+            </cylinder>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='left_front_caster'>
+          <pose>-0.0615 0.025 0.025 0 1.5708 0</pose>
+          <geometry>
+            <cylinder>
+              <radius>0.025</radius>
+              <length>0.035</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Black</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='collision_left_front_caster'>
+          <pose>-0.0615 0.025 0.025 0 1.5708 0</pose>
+          <geometry>
+            <cylinder>
+              <radius>0.025</radius>
+              <length>0.035</length>
+            </cylinder>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='right_back_caster'>
+          <pose>-0.4075 1.165 0.025 0 1.5708 0</pose>
+          <geometry>
+            <cylinder>
+              <radius>0.025</radius>
+              <length>0.035</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Black</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='collision_right_back_caster'>
+          <pose>-0.4075 1.165 0.025 0 1.5708 0</pose>
+          <geometry>
+            <cylinder>
+              <radius>0.025</radius>
+              <length>0.035</length>
+            </cylinder>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='left_back_caster'>
+          <pose>-0.4075 0.025 0.025 0 1.5708 0</pose>
+          <geometry>
+            <cylinder>
+              <radius>0.025</radius>
+              <length>0.035</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Black</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='collision_left_back_caster'>
+          <pose>-0.4075 0.025 0.025 0 1.5708 0</pose>
+          <geometry>
+            <cylinder>
+              <radius>0.025</radius>
+              <length>0.035</length>
+            </cylinder>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='center_front_caster1'>
+          <pose>-0.1375 0.370 0.025 0 1.5708 0</pose>
+          <geometry>
+            <cylinder>
+              <radius>0.025</radius>
+              <length>0.035</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Black</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='collision_center_front_caster1'>
+          <pose>-0.1375 0.370 0.025 0 1.5708 0</pose>
+          <geometry>
+            <cylinder>
+              <radius>0.025</radius>
+              <length>0.035</length>
+            </cylinder>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='center_front_caster2'>
+          <pose>-0.1375 0.860 0.025 0 1.5708 0</pose>
+          <geometry>
+            <cylinder>
+              <radius>0.025</radius>
+              <length>0.035</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Black</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='collision_center_front_caster2'>
+          <pose>-0.1375 0.860 0.025 0 1.5708 0</pose>
+          <geometry>
+            <cylinder>
+              <radius>0.025</radius>
+              <length>0.035</length>
+            </cylinder>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <static>1</static>
+    </model>
+</sdf>

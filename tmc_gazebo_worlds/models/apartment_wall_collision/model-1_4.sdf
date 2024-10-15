@@ -1,0 +1,218 @@
+<?xml version="1.0" ?>
+<sdf version="1.4">
+    <model name='apartment_wall_collision'>
+      <link name='link'>
+        <inertial>
+          <mass>50</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <visual name='wall_x00y00_x00y15'>
+          <pose>-0.002 6.59 1.04 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.002 13.2 2.08</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://base_materials/color/scripts</uri>
+              <name>hsr_color/cornflowerblue_transparency1</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='wall_x00y00_x00y15'>
+          <pose>-0.002 6.59 1.04 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.002 13.2 2.08</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='wall_x00y00_x13y00'>
+          <pose>5.0375 -0.002 1.04 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>10.08 0.002 2.08</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://base_materials/color/scripts</uri>
+              <name>hsr_color/cornflowerblue_transparency1</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='wall_x00y00_x13y00'>
+          <pose>5.0375 -0.002 1.04 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>10.08 0.002 2.08</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='wall_x13y00_x13y12'>
+          <pose>10.077 5.42 1.04 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.002 10.84 2.08</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://base_materials/color/scripts</uri>
+              <name>hsr_color/cornflowerblue_transparency1</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='wall_x13y00_x13y12'>
+          <pose>10.077 5.42 1.04 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.002 10.84 2.08</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='wall_x13y14_x13y16'>
+          <pose>10.077 12.43 1.04 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.002 1.5 2.08</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://base_materials/color/scripts</uri>
+              <name>hsr_color/cornflowerblue_transparency1</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='wall_x13y14_x13y16'>
+          <pose>10.077 12.43 1.04 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.002 1.5 2.08</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='wall_x00y16_x01y16'>
+          <pose>0.4525 13.182 1.04 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.904 0.002 2.08</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://base_materials/color/scripts</uri>
+              <name>hsr_color/cornflowerblue_transparency1</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='wall_x00y16_x01y16'>
+          <pose>0.4525 13.182 1.04 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.904 0.002 2.08</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='wall_x03y16_x13y16'>
+          <pose>5.948 13.182 1.04 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>8.30 0.002 2.08</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://base_materials/color/scripts</uri>
+              <name>hsr_color/cornflowerblue_transparency1</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='wall_x03y16_x13y16'>
+          <pose>5.948 13.182 1.04 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>8.30 0.002 2.08</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <static>1</static>
+    </model>
+</sdf>

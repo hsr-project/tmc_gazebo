@@ -1,0 +1,710 @@
+<?xml version="1.0" ?>
+<sdf version='1.4' xmlns:xacro="http://www.ros.org/wiki/xacro">
+  <world name='default'>
+    <scene>
+      <ambient>0.5 0.5 0.5 1</ambient>
+      <shadows>0</shadows>
+      <grid>0</grid>
+      <background>0.7 0.7 0.7 1</background>
+    </scene>
+    <xacro:include filename="include/physics.xacro" />
+    <model name='gplane'>
+      <pose>0 0 0 0 -0 0</pose>
+      <link name='body'>
+        <pose>0 0 0 0 -0 0</pose>
+        <collision name='gplane_coll'>
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>10.075 13.18</size>
+            </plane>
+          </geometry>
+          <surface>
+            <contact>
+              <ode>
+                <kp>1e+06</kp>
+                <kd>1</kd>
+              </ode>
+            </contact>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+          </surface>
+          <laser_retro>2000</laser_retro>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='gplane_vis'>
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>10.075 13.18</size>
+            </plane>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://base_materials/carpet/scripts</uri>
+              <uri>model://base_materials/carpet/textures</uri>
+              <name>carpet/carpet01</name>
+            </script>
+          </material>
+          <cast_shadows>0</cast_shadows>
+        </visual>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <static>1</static>
+    </model>
+    <light name='inner_point_white1' type='point'>
+      <pose>4 5 4 0 0 0</pose>
+      <diffuse>0.2 0.2 0.2 1</diffuse>
+      <specular>0.1 0.1 0.1 1</specular>
+      <attenuation>
+        <range>20</range>
+        <linear>0.1</linear>
+        <constant>0.2</constant>
+        <quadratic>0</quadratic>
+      </attenuation>
+      <cast_shadows>0</cast_shadows>
+      <direction>0 0 -1</direction>
+    </light>
+    <light name='inner_point_white2' type='point'>
+      <pose>4 10 4 0 0 0</pose>
+      <diffuse>0.2 0.2 0.2 1</diffuse>
+      <specular>0.1 0.1 0.1 1</specular>
+      <attenuation>
+        <range>20</range>
+        <linear>0.1</linear>
+        <constant>0.2</constant>
+        <quadratic>0</quadratic>
+      </attenuation>
+      <cast_shadows>0</cast_shadows>
+      <direction>0 0 -1</direction>
+    </light>
+    <light name='inner_point_white3' type='point'>
+      <pose>8 5 4 0 0 0</pose>
+      <diffuse>0.2 0.2 0.2 1</diffuse>
+      <specular>0.1 0.1 0.1 1</specular>
+      <attenuation>
+        <range>20</range>
+        <linear>0.1</linear>
+        <constant>0.2</constant>
+        <quadratic>0</quadratic>
+      </attenuation>
+      <cast_shadows>0</cast_shadows>
+      <direction>0 0 -1</direction>
+    </light>
+    <light name='inner_point_white4' type='point'>
+      <pose>8 10 4 0 0 0</pose>
+      <diffuse>0.2 0.2 0.2 1</diffuse>
+      <specular>0.1 0.1 0.1 1</specular>
+      <attenuation>
+        <range>20</range>
+        <linear>0.1</linear>
+        <constant>0.2</constant>
+        <quadratic>0</quadratic>
+      </attenuation>
+      <cast_shadows>0</cast_shadows>
+      <direction>0 0 -1</direction>
+    </light>
+    <include>
+      <static>1</static>
+      <pose>-0.0275 -0.0275 0 0 0 0</pose>
+      <uri>model://wall_frame_55_55_2090_none_collision</uri>
+      <name>wall_x00y00</name>
+    </include>
+    <include>
+      <static>1</static>
+      <pose>-0.0275 0.45 0 0 0 0</pose>
+      <uri>model://full_wall_55_900_2090_none_collision</uri>
+      <name>wall_x00y01</name>
+    </include>
+    <include>
+      <static>1</static>
+      <pose>-0.0275 1.35 0 0 0 0</pose>
+      <uri>model://half_glass_wall_55_900_2090_none_collision</uri>
+      <name>wall_x00y02</name>
+    </include>
+    <include>
+      <static>1</static>
+      <pose>-0.0275 2.25 0 0 0 0</pose>
+      <uri>model://half_glass_wall_55_900_2090_none_collision</uri>
+      <name>wall_x00y03</name>
+    </include>
+    <include>
+      <static>1</static>
+      <pose>-0.0275 3.15 0 0 0 0</pose>
+      <uri>model://half_glass_wall_55_900_2090_none_collision</uri>
+      <name>wall_x00y04</name>
+    </include>
+    <include>
+      <static>1</static>
+      <pose>-0.0275 4.05 0 0 0 0</pose>
+      <uri>model://full_wall_55_900_2090_none_collision</uri>
+      <name>wall_x00y05</name>
+    </include>
+    <include>
+      <static>1</static>
+      <pose>-0.0275 4.95 0 0 0 0</pose>
+      <uri>model://half_glass_wall_55_900_2090_none_collision</uri>
+      <name>wall_x00y06</name>
+    </include>
+    <include>
+      <static>1</static>
+      <pose>-0.0275 5.85 0 0 0 0</pose>
+      <uri>model://half_glass_wall_55_900_2090_none_collision</uri>
+      <name>wall_x00y07</name>
+    </include>
+    <include>
+      <static>1</static>
+      <pose>-0.0275 6.75 0 0 0 0</pose>
+      <uri>model://half_glass_wall_55_900_2090_none_collision</uri>
+      <name>wall_x00y08</name>
+    </include>
+    <include>
+      <static>1</static>
+      <pose>-0.0275 7.65 0 0 0 0</pose>
+      <uri>model://full_wall_55_900_2090_none_collision</uri>
+      <name>wall_x00y09</name>
+    </include>
+    <include>
+      <static>1</static>
+      <pose>-0.0275 8.55 0 0 0 0</pose>
+      <uri>model://full_wall_55_900_2090_none_collision</uri>
+      <name>wall_x00y10</name>
+    </include>
+    <include>
+      <static>1</static>
+      <pose>-0.0275 9.45 0 0 0 0</pose>
+      <uri>model://full_wall_55_900_2090_none_collision</uri>
+      <name>wall_x00y11</name>
+    </include>
+    <include>
+      <static>1</static>
+      <pose>-0.0275 10.35 0 0 0 0</pose>
+      <uri>model://full_wall_55_900_2090_none_collision</uri>
+      <name>wall_x00y12</name>
+    </include>
+    <include>
+      <static>1</static>
+      <pose>-0.0275 11.25 0 0 0 0</pose>
+      <uri>model://half_glass_wall_55_900_2090_none_collision</uri>
+      <name>wall_x00y13</name>
+    </include>
+    <include>
+      <static>1</static>
+      <pose>-0.0275 12.15 0 0 0 0</pose>
+      <uri>model://full_wall_55_900_2090_none_collision</uri>
+      <name>wall_x00y14</name>
+    </include>
+    <include>
+      <static>1</static>
+      <pose>-0.0275 12.73 0 0 0 0</pose>
+      <uri>model://full_wall_55_900_2090_none_collision</uri>
+      <name>wall_x00y15</name>
+    </include>
+    <include>
+      <static>1</static>
+      <pose>-0.0275 13.2075 0 0 0 0</pose>
+      <uri>model://wall_frame_55_55_2090_none_collision</uri>
+      <name>wall_x00y16</name>
+    </include>
+    <include>
+      <static>1</static>
+      <pose>0.45 -0.0275 0 0 0 1.5708</pose>
+      <uri>model://full_wall_55_900_2090_none_collision</uri>
+      <name>wall_x01y00</name>
+    </include>
+    <include>
+      <static>1</static>
+      <pose>1.35 -0.0275 0 0 0 1.5708</pose>
+      <uri>model://half_glass_wall_55_900_2090_none_collision</uri>
+      <name>wall_x02y00</name>
+    </include>
+    <include>
+      <static>1</static>
+      <pose>2.25 -0.0275 0 0 0 1.5708</pose>
+      <uri>model://half_glass_wall_55_900_2090_none_collision</uri>
+      <name>wall_x03y00</name>
+    </include>
+    <include>
+      <static>1</static>
+      <pose>3.15 -0.0275 0 0 0 1.5708</pose>
+      <uri>model://full_wall_55_900_2090_none_collision</uri>
+      <name>wall_x04y00</name>
+    </include>
+    <include>
+      <static>1</static>
+      <pose>4.05 -0.0275 0 0 0 1.5708</pose>
+      <uri>model://full_wall_55_900_2090_none_collision</uri>
+      <name>wall_x05y00</name>
+    </include>
+    <include>
+      <static>1</static>
+      <pose>4.95 -0.0275 0 0 0 1.5708</pose>
+      <uri>model://half_glass_wall_55_900_2090_none_collision</uri>
+      <name>wall_x06y00</name>
+    </include>
+    <include>
+      <static>1</static>
+      <pose>5.85 -0.0275 0 0 0 1.5708</pose>
+      <uri>model://half_glass_wall_55_900_2090_none_collision</uri>
+      <name>wall_x07y00</name>
+    </include>
+    <include>
+      <static>1</static>
+      <pose>6.75 -0.0275 0 0 0 1.5708</pose>
+      <uri>model://full_wall_55_900_2090_none_collision</uri>
+      <name>wall_x08y00</name>
+    </include>
+    <include>
+      <static>1</static>
+      <pose>7.65 -0.0275 0 0 0 1.5708</pose>
+      <uri>model://half_glass_wall_55_900_2090_none_collision</uri>
+      <name>wall_x09y00</name>
+    </include>
+    <include>
+      <static>1</static>
+      <pose>8.55 -0.0275 0 0 0 1.5708</pose>
+      <uri>model://half_glass_wall_55_900_2090_none_collision</uri>
+      <name>wall_x10y00</name>
+    </include>
+    <include>
+      <static>1</static>
+      <pose>9.45 -0.0275 0 0 0 1.5708</pose>
+      <uri>model://full_wall_55_900_2090_none_collision</uri>
+      <name>wall_x11y00</name>
+    </include>
+    <include>
+      <static>1</static>
+      <pose>9.625 -0.0275 0 0 0 1.5708</pose>
+      <uri>model://full_wall_55_900_2090_none_collision</uri>
+      <name>wall_x12y00</name>
+    </include>
+    <include>
+      <static>1</static>
+      <pose>10.1025 -0.0275 0 0 0 0</pose>
+      <uri>model://wall_frame_55_55_2090_none_collision</uri>
+      <name>wall_x13y00</name>
+    </include>
+
+    <include>
+      <static>1</static>
+      <pose>10.1025 0.45 0 0 0 0</pose>
+      <uri>model://full_wall_55_900_2090_none_collision</uri>
+      <name>wall_x13y01</name>
+    </include>
+    <include>
+      <static>1</static>
+      <pose>10.1025 1.35 0 0 0 0</pose>
+      <uri>model://half_glass_wall_55_900_2090_none_collision</uri>
+      <name>wall_x13y02</name>
+    </include>
+    <include>
+      <static>1</static>
+      <pose>10.1025 2.25 0 0 0 0</pose>
+      <uri>model://half_glass_wall_55_900_2090_none_collision</uri>
+      <name>wall_x13y03</name>
+    </include>
+    <include>
+      <static>1</static>
+      <pose>10.1025 3.15 0 0 0 0</pose>
+      <uri>model://full_wall_55_900_2090_none_collision</uri>
+      <name>wall_x13y04</name>
+    </include>
+    <include>
+      <static>1</static>
+      <pose>10.1025 4.05 0 0 0 0</pose>
+      <uri>model://half_glass_wall_55_900_2090_none_collision</uri>
+      <name>wall_x13y05</name>
+    </include>
+    <include>
+      <static>1</static>
+      <pose>10.1025 4.95 0 0 0 0</pose>
+      <uri>model://half_glass_wall_55_900_2090_none_collision</uri>
+      <name>wall_x13y06</name>
+    </include>
+    <include>
+      <static>1</static>
+      <pose>10.1025 5.85 0 0 0 0</pose>
+      <uri>model://full_wall_55_900_2090_none_collision</uri>
+      <name>wall_x13y07</name>
+    </include>
+    <include>
+      <static>1</static>
+      <pose>10.1025 6.75 0 0 0 0</pose>
+      <uri>model://half_glass_wall_55_900_2090_none_collision</uri>
+      <name>wall_x13y08</name>
+    </include>
+    <include>
+      <static>1</static>
+      <pose>10.1025 7.65 0 0 0 0</pose>
+      <uri>model://half_glass_wall_55_900_2090_none_collision</uri>
+      <name>wall_x13y09</name>
+    </include>
+    <include>
+      <static>1</static>
+      <pose>10.1025 8.55 0 0 0 0</pose>
+      <uri>model://full_wall_55_900_2090_none_collision</uri>
+      <name>wall_x13y10</name>
+    </include>
+    <include>
+      <static>1</static>
+      <pose>10.1025 9.45 0 0 0 0</pose>
+      <uri>model://full_wall_55_900_2090_none_collision</uri>
+      <name>wall_x13y11</name>
+    </include>
+    <include>
+      <static>1</static>
+      <pose>10.1025 10.35 0 0 0 0</pose>
+      <uri>model://half_glass_wall_55_900_2090_none_collision</uri>
+      <name>wall_x13y12</name>
+    </include>
+    <include>
+      <static>1</static>
+      <pose>10.1025 12.15 0 0 0 0</pose>
+      <uri>model://full_wall_55_900_2090_none_collision</uri>
+      <name>wall_x13y14</name>
+    </include>
+    <include>
+      <static>1</static>
+      <pose>10.1025 12.73 0 0 0 0</pose>
+      <uri>model://full_wall_55_900_2090_none_collision</uri>
+      <name>wall_x13y15</name>
+    </include>
+    <include>
+      <static>1</static>
+      <pose>10.1025 13.2075 0 0 0 0</pose>
+      <uri>model://wall_frame_55_55_2090_none_collision</uri>
+      <name>wall_x13y16</name>
+    </include>
+
+    <include>
+      <static>1</static>
+      <pose>0.45 13.2075 0 0 0 1.5708</pose>
+      <uri>model://full_wall_55_900_2090_none_collision</uri>
+      <name>wall_x01y16</name>
+    </include>
+    <include>
+      <static>1</static>
+      <pose>2.25 13.2075 0 0 0 1.5708</pose>
+      <uri>model://full_wall_55_900_2090_none_collision</uri>
+      <name>wall_x03y16</name>
+    </include>
+    <include>
+      <static>1</static>
+      <pose>3.15 13.2075 0 0 0 1.5708</pose>
+      <uri>model://full_wall_55_900_2090_none_collision</uri>
+      <name>wall_x04y16</name>
+    </include>
+    <include>
+      <static>1</static>
+      <pose>4.05 13.2075 0 0 0 1.5708</pose>
+      <uri>model://full_wall_55_900_2090_none_collision</uri>
+      <name>wall_x05y16</name>
+    </include>
+    <include>
+      <static>1</static>
+      <pose>4.95 13.2075 0 0 0 1.5708</pose>
+      <uri>model://full_wall_55_900_2090_none_collision</uri>
+      <name>wall_x06y16</name>
+    </include>
+    <include>
+      <static>1</static>
+      <pose>5.85 13.2075 0 0 0 1.5708</pose>
+      <uri>model://full_wall_55_900_2090_none_collision</uri>
+      <name>wall_x07y16</name>
+    </include>
+    <include>
+      <static>1</static>
+      <pose>6.75 13.2075 0 0 0 1.5708</pose>
+      <uri>model://full_wall_55_900_2090_none_collision</uri>
+      <name>wall_x08y16</name>
+    </include>
+    <include>
+      <static>1</static>
+      <pose>7.65 13.2075 0 0 0 1.5708</pose>
+      <uri>model://half_glass_wall_55_900_2090_none_collision</uri>
+      <name>wall_x09y16</name>
+    </include>
+    <include>
+      <static>1</static>
+      <pose>8.55 13.2075 0 0 0 1.5708</pose>
+      <uri>model://half_glass_wall_55_900_2090_none_collision</uri>
+      <name>wall_x10y16</name>
+    </include>
+    <include>
+      <static>1</static>
+      <pose>9.45 13.2075 0 0 0 1.5708</pose>
+      <uri>model://full_wall_55_900_2090_none_collision</uri>
+      <name>wall_x11y16</name>
+    </include>
+    <include>
+      <static>1</static>
+      <pose>9.625 13.2075 0 0 0 1.5708</pose>
+      <uri>model://full_wall_55_900_2090_none_collision</uri>
+      <name>wall_x12y16</name>
+    </include>
+    <include>
+      <static>1</static>
+      <pose>10.1025 13.2075 0 0 0 0</pose>
+      <uri>model://wall_frame_55_55_2090_none_collision</uri>
+      <name>wall_x13y16</name>
+    </include>
+
+    <include>
+      <static>1</static>
+      <pose>4.075 0.45 0 0 0 0</pose>
+      <uri>model://full_wall_55_900_2090</uri>
+      <name>wall_x05y01</name>
+    </include>
+    <include>
+      <static>1</static>
+      <pose>4.075 1.35 0 0 0 0</pose>
+      <uri>model://full_wall_55_900_2090</uri>
+      <name>wall_x05y02</name>
+    </include>
+    <include>
+      <static>1</static>
+      <pose>4.075 2.25 0 0 0 0</pose>
+      <uri>model://full_wall_55_900_2090</uri>
+      <name>wall_x05y03</name>
+    </include>
+    <include>
+      <static>1</static>
+      <pose>4.075 3.15 0 0 0 0</pose>
+      <uri>model://full_wall_55_900_2090</uri>
+      <name>wall_x05y04</name>
+    </include>
+    <include>
+      <static>1</static>
+      <pose>4.075 4.05 0 0 0 0</pose>
+      <uri>model://full_wall_55_900_2090</uri>
+      <name>wall_x05y05</name>
+    </include>
+    <include>
+      <static>1</static>
+      <pose>4.075 4.95 0 0 0 0</pose>
+      <uri>model://full_wall_55_900_2090</uri>
+      <name>wall_x05y06</name>
+    </include>
+    <include>
+      <static>1</static>
+      <pose>4.075 5.85 0 0 0 0</pose>
+      <uri>model://full_wall_55_900_2090</uri>
+      <name>wall_x05y07</name>
+    </include>
+
+    <include>
+      <static>1</static>
+      <pose>4.075 5.98 0 0 0 0</pose>
+      <uri>model://full_wall_55_900_2090</uri>
+      <name>wall_x05y08</name>
+    </include>
+    <include>
+      <static>1</static>
+      <pose>4.075 7.78 0 0 0 0</pose>
+      <uri>model://full_wall_55_900_2090</uri>
+      <name>wall_x05y10</name>
+    </include>
+    <include>
+      <static>1</static>
+      <pose>0.45 8.23 0 0 0 1.5708</pose>
+      <uri>model://full_wall_55_900_2090</uri>
+      <name>wall_x01y09</name>
+    </include>
+    <include>
+      <static>1</static>
+      <pose>0.65 8.23 0 0 0 1.5708</pose>
+      <uri>model://full_wall_55_900_2090</uri>
+      <name>wall_x02y09</name>
+    </include>
+    <include>
+      <static>1</static>
+      <pose>2.65 8.23 0 0 0 1.5708</pose>
+      <uri>model://full_wall_55_900_2090</uri>
+      <name>wall_x04y09</name>
+    </include>
+    <include>
+      <static>1</static>
+      <pose>3.15 8.23 0 0 0 1.5708</pose>
+      <uri>model://full_wall_55_900_2090</uri>
+      <name>wall_x05y09b</name>
+    </include>
+    <include>
+      <static>1</static>
+      <pose>4.05 8.23 0 0 0 1.5708</pose>
+      <uri>model://full_wall_55_900_2090</uri>
+      <name>wall_x06y09</name>
+    </include>
+    <include>
+      <static>1</static>
+      <pose>4.19 8.23 0 0 0 1.5708</pose>
+      <uri>model://full_wall_55_900_2090</uri>
+      <name>wall_x07y09</name>
+    </include>
+    <include>
+      <static>1</static>
+      <pose>5.9925 8.23 0 0 0 1.5708</pose>
+      <uri>model://full_wall_55_900_2090</uri>
+      <name>wall_x08y10a</name>
+    </include>
+
+    <include>
+      <static>1</static>
+      <pose>6.47 8.23 0 0 0 0</pose>
+      <uri>model://wall_frame_55_55_2090</uri>
+      <name>wall_x08y09b</name>
+    </include>
+    <include>
+      <static>1</static>
+      <pose>6.47 8.7075 0 0 0 0</pose>
+      <uri>model://full_wall_55_900_2090</uri>
+      <name>wall_x08y10b</name>
+    </include>
+    <include>
+      <static>1</static>
+      <pose>6.47 9.45 0 0 0 0</pose>
+      <uri>model://full_wall_55_900_2090</uri>
+      <name>wall_x08y11</name>
+    </include>
+    <include>
+      <static>1</static>
+      <pose>6.47 10.35 0 0 0 0</pose>
+      <uri>model://full_wall_55_900_2090</uri>
+      <name>wall_x08y12</name>
+    </include>
+    <include>
+      <static>1</static>
+      <pose>6.47 12.35 0 0 0 0</pose>
+      <uri>model://full_wall_55_900_2090</uri>
+      <name>wall_x08y14</name>
+    </include>
+    <include>
+      <static>1</static>
+      <pose>6.47 12.73 0 0 0 0</pose>
+      <uri>model://full_wall_55_900_2090</uri>
+      <name>wall_x08y15</name>
+    </include>
+    <include>
+      <static>1</static>
+      <pose>6.47 13.2075 0 0 0 0</pose>
+      <uri>model://wall_frame_55_55_2090</uri>
+      <name>wall_x08y16</name>
+    </include>
+
+    <include>
+      <static>1</static>
+      <pose>6.918 9.23 0 0 0 1.5708</pose>
+      <uri>model://full_wall_55_900_2090</uri>
+      <name>wall_x08y11b</name>
+    </include>
+    <include>
+      <static>1</static>
+      <pose>7.65 9.23 0 0 0 1.5708</pose>
+      <uri>model://full_wall_55_900_2090</uri>
+      <name>wall_x09y11</name>
+    </include>
+    <include>
+      <static>1</static>
+      <pose>9.45 9.23 0 0 0 1.5708</pose>
+      <uri>model://full_wall_55_900_2090</uri>
+      <name>wall_x11y11</name>
+    </include>
+    <include>
+      <static>1</static>
+      <pose>9.625 9.23 0 0 0 1.5708</pose>
+      <uri>model://full_wall_55_900_2090</uri>
+      <name>wall_x12y11</name>
+    </include>
+    <include>
+      <static>1</static>
+      <pose>10.1025 9.23 0 0 0 0</pose>
+      <uri>model://wall_frame_55_55_2090</uri>
+      <name>wall_x13y11</name>
+    </include>
+
+    <include>
+      <static>1</static>
+      <pose>4.45 12.87 0 0 0 -1.5708</pose>
+      <uri>model://high_shelf</uri>
+      <name>high_shelf01</name>
+    </include>
+    <include>
+      <static>1</static>
+      <pose>4 12.87 0 0 0 -1.5708</pose>
+      <uri>model://high_shelf</uri>
+      <name>high_shelf02</name>
+    </include>
+    <include>
+      <static>1</static>
+      <pose>3.55 12.87 0 0 0 -1.5708</pose>
+      <uri>model://high_shelf</uri>
+      <name>high_shelf03</name>
+    </include>
+    <include>
+      <static>1</static>
+      <pose>3.10 12.87 0 0 0 -1.5708</pose>
+      <uri>model://high_shelf</uri>
+      <name>high_shelf04</name>
+    </include>
+    <include>
+      <static>1</static>
+      <pose>0.31 9 0 0 0 0</pose>
+      <uri>model://high_shelf</uri>
+      <name>high_shelf05</name>
+    </include>
+    <include>
+      <static>1</static>
+      <pose>0.31 9.45 0 0 0 0</pose>
+      <uri>model://high_shelf</uri>
+      <name>high_shelf06</name>
+    </include>
+    <include>
+      <static>1</static>
+      <pose>0.31 9.9 0 0 0 0</pose>
+      <uri>model://high_shelf</uri>
+      <name>high_shelf07</name>
+    </include>
+
+    <include>
+      <static>1</static>
+      <pose>0 0 0 0 0 0</pose>
+      <uri>model://apartment_wall_collision</uri>
+      <name>apartment_wall_collision</name>
+    </include>
+
+    <include>
+      <static>1</static>
+      <pose>5.375 6.59 0 0 0 0</pose>
+      <uri>model://lawn_garden</uri>
+      <name>lawn_garden</name>
+    </include>
+
+    <state world_name='default'>
+      <sim_time>172 674000000</sim_time>
+      <real_time>173 410833696</real_time>
+      <wall_time>1406595440 490832864</wall_time>
+      <model name='gplane'>
+        <pose>0 0 0 0 -0 0</pose>
+        <link name='body'>
+          <pose>5.0375 6.59 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+    </state>
+    <gui fullscreen='0'>
+      <camera name='user_camera'>
+        <pose>15.9219 -11.5071 12.5328 3.22e-17 0.531643 2.05619</pose>
+        <view_controller>orbit</view_controller>
+      </camera>
+    </gui>
+  </world>
+</sdf>

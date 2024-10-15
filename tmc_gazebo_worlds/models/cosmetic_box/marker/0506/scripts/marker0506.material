@@ -1,0 +1,15 @@
+material Marker/0506
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture BchThin_Id0506_Size0036.png
+        filtering anistropic
+        max_anisotropy 16
+      }
+    }
+  }
+}

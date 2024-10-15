@@ -1,0 +1,30 @@
+material Marker/0015
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture BchThin_Id0015_Size120.png
+        filtering anistropic
+        max_anisotropy 16
+      }
+    }
+  }
+}
+material Marker/0015_80
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture BchThin_Id0015_Size80.png
+        filtering anistropic
+        max_anisotropy 16
+      }
+    }
+  }
+}

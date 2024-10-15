@@ -1,0 +1,29 @@
+<?xml version="1.0" ?>
+<sdf version="1.4">
+    <model name="basket">
+      <link name="body">
+        <visual name="visual">
+          <geometry>
+            <mesh><uri>model://basket/basket.dae</uri></mesh>
+          </geometry>
+        </visual>
+        <collision name="basket">
+          <pose>0 0.0485 0 1.5708 0 0</pose>
+          <geometry>
+            <cylinder>
+              <radius>0.13</radius>
+              <length>0.097</length>
+            </cylinder>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>100</mu>
+                <mu2>50</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+      </link>
+    </model>
+</sdf>

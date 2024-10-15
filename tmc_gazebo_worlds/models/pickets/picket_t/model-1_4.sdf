@@ -1,0 +1,26 @@
+<?xml version="1.0" ?>
+<sdf version="1.4">
+    <model name="picket_t">
+      <link name="body">
+        <visual name="visual">
+          <geometry>
+            <mesh><uri>model://pickets/picket_t/picket_t.dae</uri></mesh>
+          </geometry>
+        </visual>
+        <collision name="picket_t">
+          <pose>0 0.35 0 1.5708 0 0</pose>
+          <geometry>
+            <box><size>0.397 0.397 0.7</size></box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>100</mu>
+                <mu2>50</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+      </link>
+    </model>
+</sdf>

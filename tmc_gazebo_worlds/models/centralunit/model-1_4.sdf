@@ -1,0 +1,203 @@
+<?xml version="1.0" ?>
+<sdf version="1.4">
+    <model name="centralunit">
+      <static>true</static>
+      <!-- Geometry of centralunit is the same as that of room. -->
+      <link name="body">
+        <visual name="visual">
+          <geometry>
+            <mesh><uri>model://centralunit/centralunit.dae</uri></mesh>
+          </geometry>
+        </visual>
+        <collision name='armrest_sofa_r'> 
+          <pose>-2.820 0.6725 6.171 0 0 0</pose> <!-- x=800+1495+(1050/2) y=0.3+(0.7/2) z=1711+2650+2540-600-(260/2) -->
+          <geometry>
+            <box>
+              <size>1.05 0.7 0.26</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <contact>
+              <ode/>
+            </contact>
+            <friction>
+              <ode>
+                <mu>100</mu>
+                <mu2>50</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+        <collision name='sofa_back'> 
+          <pose>-3.215 0.6725 4.981 0 0 0</pose> <!-- x=1495+800+(50+630+50+60)+(260/2) y=0.3+(0.7/2) z=1711+2650+2540-600-260-(2120/2) -->
+          <geometry>
+            <box>
+              <size>0.26 0.7 2.12</size> <!-- z=60+50+1900+50+60 -->
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <contact>
+              <ode/>
+            </contact>
+            <friction>
+              <ode>
+                <mu>100</mu>
+                <mu2>50</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+        <collision name='sofa_front'> 
+          <pose>-2.69 0.45 4.981 0 0 0</pose> <!-- x=1495+800+(790/2) y=0.3+(0.3/2) z= -->
+          <geometry>
+            <box>
+              <size>0.79 0.3 2.0</size> <!-- x=50+630+50+60 y=0.2 + 0.1(cushion) z=50+1900+50 -->
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <contact>
+              <ode/>
+            </contact>
+            <friction>
+              <ode>
+                <mu>100</mu>
+                <mu2>50</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+        <collision name='armrest_sofa_l'> 
+          <pose>-2.820 0.6725 3.791 0 0 0</pose> <!-- x=800+1495+(1050/2) y=0.3+(0.7/2) z=1711+2650+2540-600-260-2120-(260/2) -->
+          <geometry>
+            <box>
+              <size>1.05 0.7 0.26</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <contact>
+              <ode/>
+            </contact>
+            <friction>
+              <ode>
+                <mu>100</mu>
+                <mu2>50</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+        <collision name='stove_corner'> 
+          <pose>-2.820 0.6725 3.136 0 0 0</pose> <!-- x=800+1495+(1050/2) y=0.3+(0.7/2)+pad because height of cent'unit doesn't match. z=1711+2650+2540-600-260-2120-260-(1050/2) -->
+          <geometry>
+            <box>
+              <size>1.05 0.7 1.05</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <contact>
+              <ode/>
+            </contact>
+            <friction>
+              <ode>
+                <mu>100</mu>
+                <mu2>50</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+        <collision name='kitchensink_corner'> 
+          <pose>-3.77 0.6725 3.136 0 0 0</pose> <!-- x=1495+800+1050+(850/2) y=0.3+(0.7/2) z=1711+2650+2540-600-260-2120-260-(1050/2) -->
+          <geometry>
+            <box>
+              <size>0.85 0.7 1.05</size> <!-- x=(300+500+400+500+200)-1050 -->
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <contact>
+              <ode/>
+            </contact>
+            <friction>
+              <ode>
+                <mu>100</mu>
+                <mu2>50</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+        <collision name='desk_middle_beam'> 
+          <pose>-4.995 0.625 3.136 0 0 0</pose> <!-- x=1495+800+1050+850+(1600/2) y=0.3+(0.65/2) z=1711+2650+2540-600-260-2120-260-(1050/2) -->
+          <geometry>
+            <box>
+              <size>1.6 0.65 0.17</size> <!-- y=700-50(top plate)  -->
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <contact>
+              <ode/>
+            </contact>
+            <friction>
+              <ode>
+                <mu>100</mu>
+                <mu2>50</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+        <collision name='desk_topplate'> 
+          <pose>-4.995 0.975 3.136 0 0 0</pose> <!-- x=1495+800+1050+850+(1600/2) y=0.3+0.65+(0.05/2) z=1711+2650+2540-600-260-2120-260-(1050/2) -->
+          <geometry>
+            <box>
+              <size>1.6 0.05 1.05</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <contact>
+              <ode/>
+            </contact>
+            <friction>
+              <ode>
+                <mu>100</mu>
+                <mu2>50</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+        <collision name='desk_corner'> 
+          <pose>-5.895 0.6725 3.136 0 0 0</pose> <!-- x=1495+800+1050+850+1600+(200/2) y=0.3+(0.7/2) z=1711+2650+2540-600-260-2120-260-(1050/2) -->
+          <geometry>
+            <box>
+              <size>0.2 0.7 1.05</size> <!-- x=3700-(1050+850+1600) -->
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <contact>
+              <ode/>
+            </contact>
+            <friction>
+              <ode>
+                <mu>100</mu>
+                <mu2>50</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+      </link>
+    </model>
+</sdf>

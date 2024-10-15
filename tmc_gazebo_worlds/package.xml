@@ -1,0 +1,30 @@
+<package format="3">
+  <name>tmc_gazebo_worlds</name>
+  <version>2.0.0</version>
+  <description>World and model files for Gazebo simulator</description>
+
+  <maintainer email="xr-hsr-support@mail.toyota.co.jp">HSR Support</maintainer>
+
+  <license>BSD 3-clause Clear License</license>
+
+  <author>Akiyoshi Ochiai</author>
+  <author>Kazuhito Tanaka</author>
+  <author>Kazuto Murase</author>
+  <author>Keisuke Takeshita</author>
+  <author>Koji Terada</author>
+  <author>Takafumi Mizuno</author>
+  <author>Tamaki Nishino</author>
+  <author>Yoshimi Iyoda</author>
+  <author>Yuta Watanabe</author>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <build_depend>xacro</build_depend>
+
+  <exec_depend>gazebo_ros</exec_depend>
+  <exec_depend>xacro</exec_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

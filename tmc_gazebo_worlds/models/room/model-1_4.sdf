@@ -1,0 +1,272 @@
+<?xml version="1.0" ?>
+<sdf version="1.4">
+    <model name="room">
+      <static>true</static>
+      <link name="body">
+        <visual name="visual">
+          <geometry>
+            <mesh><uri>model://room/room.dae</uri></mesh>
+          </geometry>
+          <material/>
+        </visual>
+        <!-- There are 3 stair steps at the rim of the floor. floor_2 is the same height as the 2nd step. -->
+        <collision name='floor_2'>
+          <pose>-4.3625 0.16 4.195 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>8.725 0.01 8.39</size> <!-- y-z-x -->
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <contact>
+              <ode/>
+            </contact>
+            <friction>
+              <ode>
+                <mu>100</mu>
+                <mu2>50</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+        <!-- There are 3 stair steps at the rim of the floor. floor_3 is the same height as the 3rd step and the highest. -->
+        <collision name='floor_3'>
+          <pose>-4.138 0.30 3.97 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>8.275 0.01 7.94</size> <!-- y-z-x -->
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <contact>
+              <ode/>
+            </contact>
+            <friction>
+              <ode>
+                <mu>100</mu>
+                <mu2>50</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+        <!-- slope at north-west (relative to the map) -->
+        <collision name='floor_slope_nw'>
+          <pose>-9.625 0.15 1.45 1.57 0 0.169</pose> <!-- x=-(8.725+1.8) -->
+          <geometry>
+            <box><size>1.825 2.9 0.01</size></box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <contact>
+              <ode/>
+            </contact>
+            <friction>
+              <ode>
+                <mu>100</mu>
+                <mu2>50</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+        <collision name='floor_bridge_slope_nw'>
+<!--          <pose>-8.5 0.15 1.45 1.57 0 0</pose>--> <!-- x=-(8.275+(0.45/2) -->
+          <pose>-8.5 0.3 1.475 1.57 0 0</pose> <!-- x=-(8.275+(0.45/2) -->
+          <geometry>
+            <box><size>0.475 2.9 0.01</size></box> <!-- x=8.725-8.275 y: 0.45 in design is a bit short so padded to mind the gap -->
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <contact>
+              <ode/>
+            </contact>
+            <friction>
+              <ode>
+                <mu>100</mu>
+                <mu2>50</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+        <!-- slope at souwth-east (relative to the map) -->
+        <collision name='floor_slope_se'>
+<!--          <pose>-1.2 0.15 9.290 1.739 0 0</pose> -->
+          <pose>-1.2 0.1525 9.34 1.739 0 0</pose> <!-- z: calculated value is 9.290 but is too close to the origin, so padded -->
+          <geometry>
+            <box><size>2.4 1.825 0.01</size> <!-- y: Calculated value is 1.825 but is short to mind the gap so padded. -->
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <contact>
+              <ode/>
+            </contact>
+            <friction>
+              <ode>
+                <mu>100</mu>
+                <mu2>50</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+        <collision name='floor_bridge_slope_se'>
+          <pose>-1.2 0.3 8.195 1.57 0 0</pose> <!-- z=7940+(465/2) -->
+          <geometry>
+            <box><size>2.4 0.51 0.01</size></box> <!-- y: 0.45 in design is a bit short so padded to mind the gap -->
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <contact>
+              <ode/>
+            </contact>
+            <friction>
+              <ode>
+                <mu>100</mu>
+                <mu2>50</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+        <collision name='pillar'>
+          <pose>-6.85 2 7.05 1.57 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.275 0.275 4</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <contact>
+              <ode/>
+            </contact>
+            <friction>
+              <ode>
+                <mu>100</mu>
+                <mu2>50</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+        <!-- Relative north in the designsheet. Handrail z is going along negative position. -->
+        <collision name='handrail_north'>
+          <pose>-5.2625 0.7 -0.11 1.57 0 0</pose> <!-- y=0.3+(0.8/2) -->
+          <geometry>
+            <box>
+              <size>8.725 0.15 0.8</size> <!-- z=0.79 (heater) + 0.01 -->
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <contact>
+              <ode/>
+            </contact>
+            <friction>
+              <ode>
+                <mu>100</mu>
+                <mu2>50</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+        <!-- Relative east in the designsheet. Handrail x is going along positive position. -->
+        <collision name='handrail_east'>
+          <pose>0 0.7 3.73 1.57 1.57 0</pose> <!-- y=0.3+(0.8/2) -->
+          <geometry>
+            <box>
+              <size>7.50 0.15 0.8</size> <!-- z=0.79 (heater) + 0.01 -->
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <contact>
+              <ode/>
+            </contact>
+            <friction>
+              <ode>
+                <mu>100</mu>
+                <mu2>50</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+        <visual name="wall_west_visual">
+          <pose>-10.0 0.5 6.5 0.0 0.0 0.0</pose>
+          <geometry>
+            <box>
+              <size>0.1 1.0 7.0</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.3 0.3 0.3 1</ambient>
+            <diffuse>0.3 0.3 0.3 1</diffuse>
+            <specular>0 0 0 1</specular>
+          </material>
+        </visual>
+        <collision name='wall_west_collision'>
+          <pose>-10.0 0.5 6.5 0.0 0.0 0.0</pose>
+          <geometry>
+            <box>
+              <size>0.1 1.0 7.0</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <contact>
+              <ode/>
+            </contact>
+            <friction>
+              <ode>
+                <mu>100</mu>
+                <mu2>50</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+        <visual name="wall_south_visual">
+          <pose>-6.5 0.5 10.0 0.0 0.0 0.0</pose>
+          <geometry>
+            <box>
+              <size>7.0 1.0 0.1</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.3 0.3 0.3 1</ambient>
+            <diffuse>0.3 0.3 0.3 1</diffuse>
+            <specular>0 0 0 1</specular>
+          </material>
+        </visual>
+        <collision name='wall_south_collision'>
+          <pose>-6.5 0.5 10.0 0.0 0.0 0.0</pose>
+          <geometry>
+            <box>
+              <size>7.0 1.0 0.1</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <contact>
+              <ode/>
+            </contact>
+            <friction>
+              <ode>
+                <mu>100</mu>
+                <mu2>50</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+      </link>
+    </model>
+</sdf>

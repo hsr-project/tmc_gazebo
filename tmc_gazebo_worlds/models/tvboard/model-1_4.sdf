@@ -1,0 +1,250 @@
+<?xml version="1.0" ?>
+<sdf version="1.4">
+    <model name='tvboard'>
+      <link name='link'>
+        <inertial>
+          <mass>50</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <visual name='left_board'>
+          <pose>-0.145 0.0085 -0.6175 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.29 0.017 1.2315</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://base_materials/wood/scripts/wood.material</uri>
+              <name>base_materials/wood</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='collision_left_board'>
+          <pose>-0.145 0.0085 -0.6175 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.29 0.017 1.2315</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='right_board'>
+          <pose>-0.145 0.4405 -0.61575 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.29 0.017 1.2315</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://base_materials/wood/scripts/wood.material</uri>
+              <name>base_materials/wood</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='collision_right_board'>
+          <pose>-0.145 0.4405 -0.61575 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.29 0.017 1.2315</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='top_board'>
+          <pose>-0.145 0.2245 -0.0085 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.29 0.415 0.017</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://base_materials/wood/scripts/wood.material</uri>
+              <name>base_materials/wood</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='collision_top_board'>
+          <pose>-0.145 0.2245 -0.0085 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.29 0.415 0.017</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='1st_shelf'>
+          <pose>-0.146 0.2245 -0.3035 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.254 0.415 0.017</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://base_materials/wood/scripts/wood.material</uri>
+              <name>base_materials/wood</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='collision_1st_shelf'>
+          <pose>-0.146 0.2245 -0.3035 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.254 0.415 0.017</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='2nd_shelf'>
+          <pose>-0.146 0.2245 -0.5845 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.254 0.415 0.017</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://base_materials/wood/scripts/wood.material</uri>
+              <name>base_materials/wood</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='collision_2nd_shelf'>
+          <pose>-0.146 0.2245 -0.5845 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.254 0.415 0.017</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='bottom_board'>
+          <pose>-0.148 0.2245 -1.04775 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.254 0.415 0.3675</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://base_materials/wood/scripts/wood.material</uri>
+              <name>base_materials/wood</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='collision_bottom_board'>
+          <pose>-0.148 0.2245 -1.04775 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.254 0.415 0.3675</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='back_board'>
+          <pose>-0.2815 0.2245 -0.61575 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.017 0.415 1.2315</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://base_materials/wood/scripts/wood.material</uri>
+              <name>base_materials/wood</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='collision_back_board'>
+          <pose>-0.2815 0.2245 -0.61575 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.017 0.415 1.2315</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <static>1</static>
+    </model>
+</sdf>

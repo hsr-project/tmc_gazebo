@@ -1,0 +1,15 @@
+material sink/001
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture sink_001.png
+        filtering anistropic
+        max_anisotropy 16
+      }
+    }
+  }
+}

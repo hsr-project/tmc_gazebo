@@ -1,0 +1,252 @@
+<?xml version="1.0" ?>
+<sdf version="1.4">
+    <model name='bed_table'>
+      <link name='link'>
+        <inertial>
+          <pose>0 0.449 0.001 0 0 0</pose>
+          <mass>10.0</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <visual name='top_board'>
+          <pose>0 0.449 0.625 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.398 0.898 0.02</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://base_materials/wood/scripts/wood.material</uri>
+              <name>base_materials/wood</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='collision_top_board'>
+          <pose>0 0.449 0.625 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.398 0.898 0.02</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='right_pole'>
+          <pose>0 0.817 0.3515 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.072 0.094 0.527</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://base_materials/color/scripts</uri>
+              <name>hsr_color/grey</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='collision_right_pole'>
+          <pose>0 0.817 0.3515 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.072 0.094 0.527</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='right_bottom_pole'>
+          <pose>0 0.8225 0.044 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.42 0.063 0.088</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://base_materials/wood/scripts/wood.material</uri>
+              <name>base_materials/wood</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='collision_right_bottom_pole'>
+          <pose>0 0.8225 0.044 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.42 0.063 0.088</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='bottom_center_pole'>
+          <pose>0 0.502 0.03 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.06 0.578 0.03</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://base_materials/wood/scripts/wood.material</uri>
+              <name>base_materials/wood</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='collision_bottom_center_pole'>
+          <pose>0 0.502 0.03 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.06 0.578 0.03</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='left_bottom_pole'>
+          <pose>0 0.18 0.0325 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.418 0.066 0.025</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://base_materials/wood/scripts/wood.material</uri>
+              <name>base_materials/wood</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='collision_left_bottom_pole'>
+          <pose>0 0.18 0.0325 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.418 0.066 0.025</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='marker_0010'>
+          <pose>0 0.14 0.093 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.09 0.001 0.09</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://bed_table/marker/0010/scripts</uri>
+              <uri>model://bed_table/marker/0010/textures</uri>
+              <name>Marker/0010</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='collision_marker_0010'>
+          <pose>0 0.14 0.093 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.09 0.001 0.09</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='marker_0010_back_plate'>
+          <pose>0 0.146 0.093 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.09 0.01 0.09</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://base_materials/wood/scripts/wood.material</uri>
+              <name>base_materials/wood</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='collision_marker_0010_back_plate'>
+          <pose>0 0.146 0.093 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.09 0.01 0.09</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce/>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode/>
+            </contact>
+          </surface>
+        </collision>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <static>1</static>
+    </model>
+</sdf>

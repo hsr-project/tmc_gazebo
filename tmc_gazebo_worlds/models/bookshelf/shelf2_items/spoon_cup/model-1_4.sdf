@@ -1,0 +1,34 @@
+<?xml version="1.0" ?>
+<sdf version="1.4">
+  <model name="shelf2_spoon_cup">
+    <link name="body">
+      <pose>0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>   0.001149   0.058516  -0.001214 0 0 0</pose>
+        <mass>0.5</mass>
+        <inertia>
+          <ixx>0.01</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.01</iyy>
+          <iyz>0</iyz>
+          <izz>0.01</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://bookshelf/shelf2_items/spoon_cup/spoon_cup.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://bookshelf/shelf2_items/spoon_cup/spoon_cup.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+  </model>
+</sdf>

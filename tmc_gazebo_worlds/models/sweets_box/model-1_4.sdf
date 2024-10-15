@@ -1,0 +1,353 @@
+<?xml version="1.0" ?>
+<sdf version="1.4">
+    <model name='sweets_box'>
+      <link name='link'>
+        <inertial>
+          <pose>0.034 0 0.04 1.57 0 0</pose>
+          <mass>0.3</mass>
+          <inertia>
+            <ixx>0.00058</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.00058</iyy>
+            <iyz>0</iyz>
+            <izz>0.00019</izz>
+          </inertia>
+        </inertial>
+        <visual name='handle_top'>
+          <pose>0.11 0 0.085 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.068 0.068 0.002</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://base_materials/color/scripts</uri>
+              <name>hsr_color/white</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='collision_handle_top'>
+          <pose>0.11 0 0.085 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.068 0.068 0.002</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce>
+              <restitution_coefficient>0.2</restitution_coefficient>
+              <threshold>0</threshold>
+            </bounce>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode>
+                 <max_vel>10</max_vel>
+              </ode>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='handle_bottom'>
+          <pose>0.11 0 0.016 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.068 0.068 0.002</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://base_materials/color/scripts</uri>
+              <name>hsr_color/white</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='collision_handle_bottom'>
+          <pose>0.11 0 0.016 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.068 0.068 0.002</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce>
+              <restitution_coefficient>0.2</restitution_coefficient>
+              <threshold>0</threshold>
+            </bounce>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode>
+                 <max_vel>10</max_vel>
+              </ode>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='marker_0503'>
+          <pose>0.11 0 0.0861 0 0 3.1415</pose>
+          <geometry>
+            <box>
+              <size>0.045 0.045 0.0001</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://sweets_box/marker/0503/scripts</uri>
+              <uri>model://sweets_box/marker/0503/textures</uri>
+              <name>Marker/0503</name>
+            </script>
+          </material>
+        </visual>
+        <visual name='handle_front'>
+          <pose>0.138 0 0.05 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.014 0.068 0.068</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://base_materials/color/scripts</uri>
+              <name>hsr_color/white</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='collision_handle_front'>
+          <pose>0.138 0 0.05 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.014 0.068 0.068</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce>
+              <restitution_coefficient>0.2</restitution_coefficient>
+              <threshold>0</threshold>
+            </bounce>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode>
+                 <max_vel>10</max_vel>
+              </ode>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='marker_0512'>
+          <pose>0.145 0 0.05 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.0001 0.045 0.045</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://sweets_box/marker/0512/scripts</uri>
+              <uri>model://sweets_box/marker/0512/textures</uri>
+              <name>Marker/0512</name>
+            </script>
+          </material>
+        </visual>
+        <visual name='box_front'>
+          <pose>0.075 0 0.043 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.001 0.108 0.085</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://base_materials/color/scripts</uri>
+              <name>hsr_color/white_transparency1</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='collision_box_front'>
+          <pose>0.075 0 0.043 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.001 0.108 0.085</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce>
+              <restitution_coefficient>0.2</restitution_coefficient>
+              <threshold>0</threshold>
+            </bounce>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode>
+                 <max_vel>10</max_vel>
+              </ode>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='box_back'>
+          <pose>-0.076 0 0.043 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.001 0.108 0.085</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://base_materials/color/scripts</uri>
+              <name>hsr_color/white_transparency1</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='collision_box_back'>
+          <pose>-0.076 0 0.043 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.001 0.108 0.085</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce>
+              <restitution_coefficient>0.2</restitution_coefficient>
+              <threshold>0</threshold>
+            </bounce>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode>
+                 <max_vel>10</max_vel>
+              </ode>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='box_right'>
+          <pose>0 0.054 0.043 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.150 0.001 0.085</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://base_materials/color/scripts</uri>
+              <name>hsr_color/white_transparency1</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='collision_box_right'>
+          <pose>0 0.054 0.043 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.150 0.001 0.085</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce>
+              <restitution_coefficient>0.2</restitution_coefficient>
+              <threshold>0</threshold>
+            </bounce>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode>
+                 <max_vel>10</max_vel>
+              </ode>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='box_left'>
+          <pose>0 -0.054 0.043 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.150 0.001 0.085</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://base_materials/color/scripts</uri>
+              <name>hsr_color/white_transparency1</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='collision_box_left'>
+          <pose>0 -0.054 0.043 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.150 0.001 0.085</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce>
+              <restitution_coefficient>0.2</restitution_coefficient>
+              <threshold>0</threshold>
+            </bounce>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode>
+                 <max_vel>10</max_vel>
+              </ode>
+            </contact>
+          </surface>
+        </collision>
+        <visual name='box_bottom'>
+          <pose>0 0 0.001 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.151 0.108 0.002</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://base_materials/color/scripts</uri>
+              <name>hsr_color/white_transparency1</name>
+            </script>
+          </material>
+        </visual>
+        <collision name='collision_box_bottom'>
+          <pose>0 0 0.001 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.151 0.108 0.002</size>
+            </box>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <bounce>
+              <restitution_coefficient>0.2</restitution_coefficient>
+              <threshold>0</threshold>
+            </bounce>
+            <friction>
+              <ode/>
+            </friction>
+            <contact>
+              <ode>
+                 <max_vel>10</max_vel>
+              </ode>
+            </contact>
+          </surface>
+        </collision>
+        <velocity_decay>
+          <linear>0</linear>
+          <angular>0</angular>
+        </velocity_decay>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <static>0</static>
+    </model>
+</sdf>

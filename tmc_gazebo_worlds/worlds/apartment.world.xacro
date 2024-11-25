@@ -345,7 +345,7 @@
       <uri>model://pear</uri>
       <name>pear_01</name>
     </include>
-    <include>
+    <!-- <include>
       <static>1</static>
       <pose>8.9 5.0 0 0 0 0</pose>
       <uri>model://construction_cone</uri>
@@ -362,7 +362,7 @@
       <pose>11.45 13.0 0 0 0 0</pose>
       <uri>model://construction_cone</uri>
       <name>startpoint_02</name>
-    </include>
+    </include> -->
     <include>
       <static>1</static>
       <pose>5.375 6.59 0 0 0 0</pose>

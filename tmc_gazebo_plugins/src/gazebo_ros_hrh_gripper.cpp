@@ -120,10 +120,10 @@ double GetGain(sdf::ElementPtr sdf, const std::string& name, double default_valu
 }
 
 control_toolbox::Pid GeneratePidControl(sdf::ElementPtr sdf, const std::string& name) {
-  if (!sdf->HasElement("parameters")) {
+  if (!sdf->HasElement("pid_params")) {
     return control_toolbox::Pid();
   }
-  auto param_sdf = sdf->GetElement("parameters");
+  auto param_sdf = sdf->GetElement("pid_params");
 
   if (!param_sdf->HasElement(name)) {
     return control_toolbox::Pid();

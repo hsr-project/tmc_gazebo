@@ -21,7 +21,7 @@
               <uri>model://hsr_orange/meshes/hsr_orange.dae</uri>
             </mesh>
           </geometry>
-          <material/>
+          
         </visual>
         <collision name='hsr_orange'>
           <pose>0.0 0.0 0.0 0 0 0</pose>

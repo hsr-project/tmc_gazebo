@@ -21,7 +21,6 @@
               <uri>model://apple/meshes/apple.dae</uri>
             </mesh>
           </geometry>
-          <material/>
         </visual>
         <collision name='apple'>
           <pose>0.0 0.0 0.0 0 0 0</pose>

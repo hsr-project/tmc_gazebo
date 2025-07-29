@@ -21,7 +21,7 @@
               <uri>model://phone/meshes/phone.dae</uri>
             </mesh>
           </geometry>
-          <material/>
+          
         </visual>
         <collision name='phone'>
           <pose>0.0 0.0 0.0 0 0 0</pose>

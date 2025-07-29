@@ -21,10 +21,11 @@
             </box>
           </geometry>
           <material>
-            <script>
-              <uri>model://base_materials/color/scripts</uri>
-              <name>hsr_color/cornflowerblue_transparency1</name>
-            </script>
+            <name>cornflowerblue_transparency1</name>
+            <ambient>0.392 0.584 0.929 1</ambient>
+            <diffuse>0.196 0.292 0.4645 1</diffuse>
+            <scene_blend>alpha_blend</scene_blend>
+            <depth_write>off</depth_write>
           </material>
         </visual>
         <collision name='wall_x00y00_x00y15'>
@@ -53,10 +54,11 @@
             </box>
           </geometry>
           <material>
-            <script>
-              <uri>model://base_materials/color/scripts</uri>
-              <name>hsr_color/cornflowerblue_transparency1</name>
-            </script>
+            <name>cornflowerblue_transparency1</name>
+            <ambient>0.392 0.584 0.929 1</ambient>
+            <diffuse>0.196 0.292 0.4645 1</diffuse>
+            <scene_blend>alpha_blend</scene_blend>
+            <depth_write>off</depth_write>
           </material>
         </visual>
         <collision name='wall_x00y00_x13y00'>
@@ -85,10 +87,11 @@
             </box>
           </geometry>
           <material>
-            <script>
-              <uri>model://base_materials/color/scripts</uri>
-              <name>hsr_color/cornflowerblue_transparency1</name>
-            </script>
+            <name>cornflowerblue_transparency1</name>
+            <ambient>0.392 0.584 0.929 1</ambient>
+            <diffuse>0.196 0.292 0.4645 1</diffuse>
+            <scene_blend>alpha_blend</scene_blend>
+            <depth_write>off</depth_write>
           </material>
         </visual>
         <collision name='wall_x13y00_x13y12'>
@@ -117,10 +120,11 @@
             </box>
           </geometry>
           <material>
-            <script>
-              <uri>model://base_materials/color/scripts</uri>
-              <name>hsr_color/cornflowerblue_transparency1</name>
-            </script>
+            <name>cornflowerblue_transparency1</name>
+            <ambient>0.392 0.584 0.929 1</ambient>
+            <diffuse>0.196 0.292 0.4645 1</diffuse>
+            <scene_blend>alpha_blend</scene_blend>
+            <depth_write>off</depth_write>
           </material>
         </visual>
         <collision name='wall_x13y14_x13y16'>
@@ -149,10 +153,11 @@
             </box>
           </geometry>
           <material>
-            <script>
-              <uri>model://base_materials/color/scripts</uri>
-              <name>hsr_color/cornflowerblue_transparency1</name>
-            </script>
+            <name>cornflowerblue_transparency1</name>
+            <ambient>0.392 0.584 0.929 1</ambient>
+            <diffuse>0.196 0.292 0.4645 1</diffuse>
+            <scene_blend>alpha_blend</scene_blend>
+            <depth_write>off</depth_write>
           </material>
         </visual>
         <collision name='wall_x00y16_x01y16'>
@@ -181,10 +186,11 @@
             </box>
           </geometry>
           <material>
-            <script>
-              <uri>model://base_materials/color/scripts</uri>
-              <name>hsr_color/cornflowerblue_transparency1</name>
-            </script>
+            <name>cornflowerblue_transparency1</name>
+            <ambient>0.392 0.584 0.929 1</ambient>
+            <diffuse>0.196 0.292 0.4645 1</diffuse>
+            <scene_blend>alpha_blend</scene_blend>
+            <depth_write>off</depth_write>
           </material>
         </visual>
         <collision name='wall_x03y16_x13y16'>

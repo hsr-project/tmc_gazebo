@@ -38,10 +38,10 @@
             <init_from>./shelf2_0.png</init_from>
         </image>
         <image id="Image0002" name="Image0002">
-            <init_from>../shelf_books.png</init_from>
+            <init_from>model://shelf_books.png</init_from>
         </image>
         <image id="Image0003" name="Image0003">
-            <init_from>../shelf_items.png</init_from>
+            <init_from>model://shelf_items.png</init_from>
         </image>
     </library_images>
     <library_materials>

@@ -35,7 +35,7 @@
     </asset>
     <library_images>
         <image id="Image0001" name="Image0001">
-            <init_from>../pickets.png</init_from>
+            <init_from>model://pickets/pickets.png</init_from>
         </image>
     </library_images>
     <library_materials>

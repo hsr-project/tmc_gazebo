@@ -21,10 +21,14 @@
             </box>
           </geometry>
           <material>
-            <script>
-              <uri>model://base_materials/color/scripts</uri>
-              <name>hsr_color/white</name>
-            </script>
+            <!-- hsr_color/white -->
+            <name>white</name>
+            <ambient>1 1 1 1</ambient>
+            <diffuse>0.5 0.5 0.5 1</diffuse>
+            <specular>0 0 0 1</specular>
+            <emissive>0 0 0 1</emissive>
+            <shading>gouraud</shading>
+            <receive_shadows>on</receive_shadows>
           </material>
         </visual>
         <collision name='x05y01_08_collision_bottom_frame'>
@@ -53,11 +57,19 @@
             </box>
           </geometry>
           <material>
-            <script>
-              <uri>model://base_materials/wall/scripts</uri>
-              <uri>model://base_materials/wall/textures</uri>
-              <name>wall/white_noise</name>
-            </script>
+            <!-- wall/white_noise -->
+            <name>white_noise</name>
+            <ambient>1 1 1 1</ambient>
+            <diffuse>0.5 0.5 0.5 1.0</diffuse>
+            <specular>0 0 0 1.0</specular>
+            <shininess>12.5</shininess>
+            <pbr>
+              <metal>
+                <albedo_map>model://base_materials/wall/textures/wall_white_noise.png</albedo_map>
+                <max_anisotropy>16</max_anisotropy>
+                <metalness>0</metalness>
+              </metal>
+            </pbr>
           </material>
         </visual>
         <collision name='x05y01_08_collision_wall'>
@@ -86,10 +98,14 @@
             </box>
           </geometry>
           <material>
-            <script>
-              <uri>model://base_materials/color/scripts</uri>
-              <name>hsr_color/white</name>
-            </script>
+            <!-- hsr_color/white -->
+            <name>white</name>
+            <ambient>1 1 1 1</ambient>
+            <diffuse>0.5 0.5 0.5 1</diffuse>
+            <specular>0 0 0 1</specular>
+            <emissive>0 0 0 1</emissive>
+            <shading>gouraud</shading>
+            <receive_shadows>on</receive_shadows>
           </material>
         </visual>
         <collision name='x05y10_collision_bottom_frame'>
@@ -118,11 +134,19 @@
             </box>
           </geometry>
           <material>
-            <script>
-              <uri>model://base_materials/wall/scripts</uri>
-              <uri>model://base_materials/wall/textures</uri>
-              <name>wall/white_noise</name>
-            </script>
+            <!-- wall/white_noise -->
+            <name>white_noise</name>
+            <ambient>1 1 1 1</ambient>
+            <diffuse>0.5 0.5 0.5 1.0</diffuse>
+            <specular>0 0 0 1.0</specular>
+            <shininess>12.5</shininess>
+            <pbr>
+              <metal>
+                <albedo_map>model://base_materials/wall/textures/wall_white_noise.png</albedo_map>
+                <max_anisotropy>16</max_anisotropy>
+                <metalness>0</metalness>
+              </metal>
+            </pbr>
           </material>
         </visual>
         <collision name='x05y10_collision_wall'>
@@ -152,10 +176,14 @@
             </box>
           </geometry>
           <material>
-            <script>
-              <uri>model://base_materials/color/scripts</uri>
-              <name>hsr_color/white</name>
-            </script>
+            <!-- hsr_color/white -->
+            <name>white</name>
+            <ambient>1 1 1 1</ambient>
+            <diffuse>0.5 0.5 0.5 1</diffuse>
+            <specular>0 0 0 1</specular>
+            <emissive>0 0 0 1</emissive>
+            <shading>gouraud</shading>
+            <receive_shadows>on</receive_shadows>
           </material>
         </visual>
         <collision name='x01_02_y09_collision_bottom_frame'>
@@ -184,11 +212,19 @@
             </box>
           </geometry>
           <material>
-            <script>
-              <uri>model://base_materials/wall/scripts</uri>
-              <uri>model://base_materials/wall/textures</uri>
-              <name>wall/white_noise</name>
-            </script>
+            <!-- wall/white_noise -->
+            <name>white_noise</name>
+            <ambient>1 1 1 1</ambient>
+            <diffuse>0.5 0.5 0.5 1.0</diffuse>
+            <specular>0 0 0 1.0</specular>
+            <shininess>12.5</shininess>
+            <pbr>
+              <metal>
+                <albedo_map>model://base_materials/wall/textures/wall_white_noise.png</albedo_map>
+                <max_anisotropy>16</max_anisotropy>
+                <metalness>0</metalness>
+              </metal>
+            </pbr>
           </material>
         </visual>
         <collision name='x01_02_y09_collision_wall'>
@@ -217,10 +253,14 @@
             </box>
           </geometry>
           <material>
-            <script>
-              <uri>model://base_materials/color/scripts</uri>
-              <name>hsr_color/white</name>
-            </script>
+            <!-- hsr_color/white -->
+            <name>white</name>
+            <ambient>1 1 1 1</ambient>
+            <diffuse>0.5 0.5 0.5 1</diffuse>
+            <specular>0 0 0 1</specular>
+            <emissive>0 0 0 1</emissive>
+            <shading>gouraud</shading>
+            <receive_shadows>on</receive_shadows>
           </material>
         </visual>
         <collision name='x04_07_y09_collision_bottom_frame'>
@@ -249,11 +289,19 @@
             </box>
           </geometry>
           <material>
-            <script>
-              <uri>model://base_materials/wall/scripts</uri>
-              <uri>model://base_materials/wall/textures</uri>
-              <name>wall/white_noise</name>
-            </script>
+            <!-- wall/white_noise -->
+            <name>white_noise</name>
+            <ambient>1 1 1 1</ambient>
+            <diffuse>0.5 0.5 0.5 1.0</diffuse>
+            <specular>0 0 0 1.0</specular>
+            <shininess>12.5</shininess>
+            <pbr>
+              <metal>
+                <albedo_map>model://base_materials/wall/textures/wall_white_noise.png</albedo_map>
+                <max_anisotropy>16</max_anisotropy>
+                <metalness>0</metalness>
+              </metal>
+            </pbr>
           </material>
         </visual>
         <collision name='x04_07_y09_collision_wall'>
@@ -282,10 +330,14 @@
             </box>
           </geometry>
           <material>
-            <script>
-              <uri>model://base_materials/color/scripts</uri>
-              <name>hsr_color/white</name>
-            </script>
+            <!-- hsr_color/white -->
+            <name>white</name>
+            <ambient>1 1 1 1</ambient>
+            <diffuse>0.5 0.5 0.5 1</diffuse>
+            <specular>0 0 0 1</specular>
+            <emissive>0 0 0 1</emissive>
+            <shading>gouraud</shading>
+            <receive_shadows>on</receive_shadows>
           </material>
         </visual>
         <collision name='x08y10a_collision_bottom_frame'>
@@ -314,11 +366,19 @@
             </box>
           </geometry>
           <material>
-            <script>
-              <uri>model://base_materials/wall/scripts</uri>
-              <uri>model://base_materials/wall/textures</uri>
-              <name>wall/white_noise</name>
-            </script>
+            <!-- wall/white_noise -->
+            <name>white_noise</name>
+            <ambient>1 1 1 1</ambient>
+            <diffuse>0.5 0.5 0.5 1.0</diffuse>
+            <specular>0 0 0 1.0</specular>
+            <shininess>12.5</shininess>
+            <pbr>
+              <metal>
+                <albedo_map>model://base_materials/wall/textures/wall_white_noise.png</albedo_map>
+                <max_anisotropy>16</max_anisotropy>
+                <metalness>0</metalness>
+              </metal>
+            </pbr>
           </material>
         </visual>
         <collision name='x08y10a_collision_wall'>
@@ -339,71 +399,7 @@
             </contact>
           </surface>
         </collision>
-        <visual name='x08y10a_bottom_frame'>
-          <pose>5.9925 8.23 0.05 0 0 1.5708</pose>
-          <geometry>
-            <box>
-              <size>0.055 0.9 0.1</size>
-            </box>
-          </geometry>
-          <material>
-            <script>
-              <uri>model://base_materials/color/scripts</uri>
-              <name>hsr_color/white</name>
-            </script>
-          </material>
-        </visual>
-        <collision name='x08y10a_collision_bottom_frame'>
-          <pose>5.9925 8.23 0.05 0 0 1.5708</pose>
-          <geometry>
-            <box>
-              <size>0.055 0.9 0.1</size>
-            </box>
-          </geometry>
-          <max_contacts>10</max_contacts>
-          <surface>
-            <bounce/>
-            <friction>
-              <ode/>
-            </friction>
-            <contact>
-              <ode/>
-            </contact>
-          </surface>
-        </collision>
-        <visual name='x08y10a_wall'>
-          <pose>5.9925 8.23 1.095 0 0 1.5708</pose>
-          <geometry>
-            <box>
-              <size>0.055 0.9 1.99</size>
-            </box>
-          </geometry>
-          <material>
-            <script>
-              <uri>model://base_materials/wall/scripts</uri>
-              <uri>model://base_materials/wall/textures</uri>
-              <name>wall/white_noise</name>
-            </script>
-          </material>
-        </visual>
-        <collision name='x08y10a_collision_wall'>
-          <pose>5.9925 8.23 1.095 0 0 1.5708</pose>
-          <geometry>
-            <box>
-              <size>0.055 0.9 1.99</size>
-            </box>
-          </geometry>
-          <max_contacts>10</max_contacts>
-          <surface>
-            <bounce/>
-            <friction>
-              <ode/>
-            </friction>
-            <contact>
-              <ode/>
-            </contact>
-          </surface>
-        </collision>
+
         <visual name='x08y14_15_bottom_frame'>
           <pose>6.47 12.54 0.05 0 0 0</pose>
           <geometry>
@@ -412,10 +408,14 @@
             </box>
           </geometry>
           <material>
-            <script>
-              <uri>model://base_materials/color/scripts</uri>
-              <name>hsr_color/white</name>
-            </script>
+            <!-- hsr_color/white -->
+            <name>white</name>
+            <ambient>1 1 1 1</ambient>
+            <diffuse>0.5 0.5 0.5 1</diffuse>
+            <specular>0 0 0 1</specular>
+            <emissive>0 0 0 1</emissive>
+            <shading>gouraud</shading>
+            <receive_shadows>on</receive_shadows>
           </material>
         </visual>
         <collision name='x08y14_15_collision_bottom_frame'>
@@ -444,11 +444,19 @@
             </box>
           </geometry>
           <material>
-            <script>
-              <uri>model://base_materials/wall/scripts</uri>
-              <uri>model://base_materials/wall/textures</uri>
-              <name>wall/white_noise</name>
-            </script>
+            <!-- wall/white_noise -->
+            <name>white_noise</name>
+            <ambient>1 1 1 1</ambient>
+            <diffuse>0.5 0.5 0.5 1.0</diffuse>
+            <specular>0 0 0 1.0</specular>
+            <shininess>12.5</shininess>
+            <pbr>
+              <metal>
+                <albedo_map>model://base_materials/wall/textures/wall_white_noise.png</albedo_map>
+                <max_anisotropy>16</max_anisotropy>
+                <metalness>0</metalness>
+              </metal>
+            </pbr>
           </material>
         </visual>
         <collision name='x08y14_15_collision_wall'>
@@ -477,10 +485,14 @@
             </box>
           </geometry>
           <material>
-            <script>
-              <uri>model://base_materials/color/scripts</uri>
-              <name>hsr_color/white</name>
-            </script>
+            <!-- hsr_color/white -->
+            <name>white</name>
+            <ambient>1 1 1 1</ambient>
+            <diffuse>0.5 0.5 0.5 1</diffuse>
+            <specular>0 0 0 1</specular>
+            <emissive>0 0 0 1</emissive>
+            <shading>gouraud</shading>
+            <receive_shadows>on</receive_shadows>
           </material>
         </visual>
         <collision name='x08y10b_12_collision_bottom_frame'>
@@ -509,11 +521,19 @@
             </box>
           </geometry>
           <material>
-            <script>
-              <uri>model://base_materials/wall/scripts</uri>
-              <uri>model://base_materials/wall/textures</uri>
-              <name>wall/white_noise</name>
-            </script>
+            <!-- wall/white_noise -->
+            <name>white_noise</name>
+            <ambient>1 1 1 1</ambient>
+            <diffuse>0.5 0.5 0.5 1.0</diffuse>
+            <specular>0 0 0 1.0</specular>
+            <shininess>12.5</shininess>
+            <pbr>
+              <metal>
+                <albedo_map>model://base_materials/wall/textures/wall_white_noise.png</albedo_map>
+                <max_anisotropy>16</max_anisotropy>
+                <metalness>0</metalness>
+              </metal>
+            </pbr>
           </material>
         </visual>
         <collision name='x08y10b_12_collision_wall'>
@@ -542,10 +562,14 @@
             </box>
           </geometry>
           <material>
-            <script>
-              <uri>model://base_materials/color/scripts</uri>
-              <name>hsr_color/white</name>
-            </script>
+            <!-- hsr_color/white -->
+            <name>white</name>
+            <ambient>1 1 1 1</ambient>
+            <diffuse>0.5 0.5 0.5 1</diffuse>
+            <specular>0 0 0 1</specular>
+            <emissive>0 0 0 1</emissive>
+            <shading>gouraud</shading>
+            <receive_shadows>on</receive_shadows>
           </material>
         </visual>
         <collision name='x08_09y11b_collision_bottom_frame'>
@@ -574,11 +598,19 @@
             </box>
           </geometry>
           <material>
-            <script>
-              <uri>model://base_materials/wall/scripts</uri>
-              <uri>model://base_materials/wall/textures</uri>
-              <name>wall/white_noise</name>
-            </script>
+            <!-- wall/white_noise -->
+            <name>white_noise</name>
+            <ambient>1 1 1 1</ambient>
+            <diffuse>0.5 0.5 0.5 1.0</diffuse>
+            <specular>0 0 0 1.0</specular>
+            <shininess>12.5</shininess>
+            <pbr>
+              <metal>
+                <albedo_map>model://base_materials/wall/textures/wall_white_noise.png</albedo_map>
+                <max_anisotropy>16</max_anisotropy>
+                <metalness>0</metalness>
+              </metal>
+            </pbr>
           </material>
         </visual>
         <collision name='x08_09y11b_collision_wall'>
@@ -608,10 +640,14 @@
             </box>
           </geometry>
           <material>
-            <script>
-              <uri>model://base_materials/color/scripts</uri>
-              <name>hsr_color/white</name>
-            </script>
+            <!-- hsr_color/white -->
+            <name>white</name>
+            <ambient>1 1 1 1</ambient>
+            <diffuse>0.5 0.5 0.5 1</diffuse>
+            <specular>0 0 0 1</specular>
+            <emissive>0 0 0 1</emissive>
+            <shading>gouraud</shading>
+            <receive_shadows>on</receive_shadows>
           </material>
         </visual>
         <collision name='x11_12y11_collision_bottom_frame'>
@@ -640,11 +676,19 @@
             </box>
           </geometry>
           <material>
-            <script>
-              <uri>model://base_materials/wall/scripts</uri>
-              <uri>model://base_materials/wall/textures</uri>
-              <name>wall/white_noise</name>
-            </script>
+            <!-- wall/white_noise -->
+            <name>white_noise</name>
+            <ambient>1 1 1 1</ambient>
+            <diffuse>0.5 0.5 0.5 1.0</diffuse>
+            <specular>0 0 0 1.0</specular>
+            <shininess>12.5</shininess>
+            <pbr>
+              <metal>
+                <albedo_map>model://base_materials/wall/textures/wall_white_noise.png</albedo_map>
+                <max_anisotropy>16</max_anisotropy>
+                <metalness>0</metalness>
+              </metal>
+            </pbr>
           </material>
         </visual>
         <collision name='x11_12y11_collision_wall'>

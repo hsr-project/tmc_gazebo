@@ -21,7 +21,7 @@
               <uri>model://snack/meshes/snack.dae</uri>
             </mesh>
           </geometry>
-          <material/>
+          
         </visual>
         <collision name='snack'>
           <pose>0.0 0.0 0.0 0 0 0</pose>

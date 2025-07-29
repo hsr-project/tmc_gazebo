@@ -41,11 +41,18 @@
             </plane>
           </geometry>
           <material>
-            <script>
-              <uri>model://base_materials/carpet/scripts</uri>
-              <uri>model://base_materials/carpet/textures</uri>
-              <name>carpet/carpet01</name>
-            </script>
+            <name>carpet</name>
+            <ambient>1 1 1 1</ambient>
+            <diffuse>0.5 0.5 0.5 1.0</diffuse>
+            <specular>0 0 0 1.0</specular>
+            <shininess>12.5</shininess>
+            <pbr>
+              <metal>
+                <albedo_map>../models/base_materials/carpet/textures/carpet01.png</albedo_map>
+                <max_anisotropy>16</max_anisotropy>
+                <scale>0.1 0.1</scale>
+              </metal>
+            </pbr>
           </material>
           <cast_shadows>0</cast_shadows>
         </visual>

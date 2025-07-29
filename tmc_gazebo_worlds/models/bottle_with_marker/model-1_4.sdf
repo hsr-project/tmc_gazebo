@@ -110,11 +110,20 @@
           </geometry>
 
           <material>
-            <script>
-              <uri>model://marker/4000/scripts</uri>
-              <uri>model://marker/4000/textures</uri>
-              <name>Marker/4000</name>
-            </script>
+            <name>Marker/4000</name>
+
+            <ambient>1 1 1 1</ambient>  <!-- 周囲光 (真っ白) -->
+            <diffuse>1 1 1 1</diffuse>  <!-- 反射光 (真っ白) -->
+            <specular>0 0 0 1</specular>  <!-- 鏡面反射 (無し) -->
+            <emissive>0 0 0 0</emissive>  <!-- 発光 (無し) -->
+
+            <pbr>
+              <metal>
+                <albedo_map>model://marker/4000/textures/BchThin_Id4000_Size36.png</albedo_map>
+                <max_anisotropy>16</max_anisotropy>
+                <metalness>0.0</metalness> <!-- 金属感を排除 -->
+              </metal>
+            </pbr>
           </material>
         </visual>
       </link>

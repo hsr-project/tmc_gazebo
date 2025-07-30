@@ -16,10 +16,15 @@
         </inertia>
       </inertial>
       <collision name="collision">
+        <pose>  -0.006085   0.085034   0.001921 0 0 0</pose>
         <geometry>
-          <mesh>
+          <!--mesh>
             <uri>model://bookshelf/shelf1_items/book1_v1/book1_v1.dae</uri>
-          </mesh>
+            <scale>1.0 1.0 1.0</scale>
+          </mesh-->
+          <box>
+            <size>0.293543 0.172462 0.1206</size>
+          </box>
         </geometry>
       </collision>
       <visual name="visual">

@@ -21,7 +21,6 @@
               <uri>model://banana/meshes/banana.dae</uri>
             </mesh>
           </geometry>
-          <material/>
         </visual>
         <collision name='collision_banana'>
           <pose>0 0 0 0 0 0</pose>

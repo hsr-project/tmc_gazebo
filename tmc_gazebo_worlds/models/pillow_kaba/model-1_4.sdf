@@ -21,7 +21,7 @@
               <uri>model://pillow_kaba/meshes/pillow_kaba.dae</uri>
             </mesh>
           </geometry>
-          <material/>
+          
         </visual>
         <collision name='pillow_kaba'>
           <pose>0.0 0.0 0.0 0 0 0</pose>

@@ -21,7 +21,7 @@
               <uri>model://handbag_large/meshes/handbag_large.dae</uri>
             </mesh>
           </geometry>
-          <material/>
+          
         </visual>
         <collision name='handbag_large'>
           <pose>0.0 0.0 0.0 0 0 0</pose>

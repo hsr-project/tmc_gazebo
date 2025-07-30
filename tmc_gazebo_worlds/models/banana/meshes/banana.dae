@@ -104,7 +104,7 @@
 <!--
               <color sid="emission">0.01 0.01 0.01 1</color>
 -->
-              <color sid="emission">0.5 0.5 0.5 1</color>
+              <color sid="emission">0.0 0.0 0.0 1</color>
             </emission>
             <ambient>
               <color sid="ambient">0 0 0 1</color>

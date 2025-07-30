@@ -21,7 +21,7 @@
               <uri>model://denden_mug_flower/meshes/denden_mug_flower.dae</uri>
             </mesh>
           </geometry>
-          <material/>
+          
         </visual>
         <collision name='denden_mug_flower'>
           <pose>0.0 0.0 0.0 0 0 0</pose>

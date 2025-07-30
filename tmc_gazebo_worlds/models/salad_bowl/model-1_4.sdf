@@ -21,7 +21,7 @@
               <uri>model://salad_bowl/meshes/salad_bowl.dae</uri>
             </mesh>
           </geometry>
-          <material/>
+          
         </visual>
         <collision name='salad_bowl'>
           <pose>0.0 0.0 0.0 0 0 0</pose>

@@ -7,7 +7,6 @@
           <geometry>
             <mesh><uri>model://room/room.dae</uri></mesh>
           </geometry>
-          <material/>
         </visual>
         <!-- There are 3 stair steps at the rim of the floor. floor_2 is the same height as the 2nd step. -->
         <collision name='floor_2'>

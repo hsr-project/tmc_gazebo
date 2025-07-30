@@ -1,19 +1,36 @@
 <?xml version="1.0" ?>
 <sdf version="1.4" xmlns:xacro="http://www.ros.org/wiki/xacro">
   <xacro:arg name="fast_physics" default="true" />
-  <physics type="ode">
-    <xacro:if value="$(arg fast_physics)">
-    <real_time_update_rate>333.0</real_time_update_rate>
-    <max_step_size>0.003</max_step_size>
-    <ode>
-      <solver>
-        <type>quick</type>
-        <iters>100</iters>
-      </solver>
-      <constraints>
-        <cfm>0.0001</cfm>
-      </constraints>
-    </ode>
-    </xacro:if>
-  </physics>
+
+  <plugin filename="gz-sim-physics-system" name="gz::sim::systems::Physics"/>
+  <plugin filename="gz-sim-user-commands-system" name="gz::sim::systems::UserCommands"/>
+  <plugin filename="gz-sim-scene-broadcaster-system" name="gz::sim::systems::SceneBroadcaster"/>
+  <plugin filename="gz-sim-sensors-system" name="gz::sim::systems::Sensors"/>
+  <plugin filename="gz-sim-imu-system" name="gz::sim::systems::Imu"/>
+  <plugin filename="ignition-gazebo-forcetorque-system" name="ignition::gazebo::systems::ForceTorque"/>
+
+  <gravity>0 0 -9.8</gravity>
+
+  <xacro:if value="$(arg fast_physics)">
+    <physics type="ode">
+      <real_time_update_rate>333.0</real_time_update_rate>
+      <max_step_size>0.003</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>100</iters>
+        </solver>
+        <constraints>
+          <cfm>0.0001</cfm>
+        </constraints>
+      </ode>
+    </physics>
+  </xacro:if>
+
+  <xacro:unless value="$(arg fast_physics)">
+    <physics name="1ms" type="ignored">
+      <max_step_size>0.005</max_step_size>
+      <real_time_factor>1.0</real_time_factor>
+    </physics>
+  </xacro:unless>
 </sdf>

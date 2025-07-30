@@ -22,10 +22,14 @@
             </box>
           </geometry>
           <material>
-            <script>
-              <uri>model://base_materials/color/scripts</uri>
-              <name>hsr_color/white</name>
-            </script>
+            <!-- hsr_color/white -->
+            <name>white</name>
+            <ambient>1 1 1 1</ambient>
+            <diffuse>0.5 0.5 0.5 1</diffuse>
+            <specular>0 0 0 1</specular>
+            <emissive>0 0 0 1</emissive>
+            <shading>gouraud</shading>
+            <receive_shadows>on</receive_shadows>
           </material>
         </visual>
         <collision name='collision_handle_top'>
@@ -59,10 +63,14 @@
             </box>
           </geometry>
           <material>
-            <script>
-              <uri>model://base_materials/color/scripts</uri>
-              <name>hsr_color/white</name>
-            </script>
+            <!-- hsr_color/white -->
+            <name>white</name>
+            <ambient>1 1 1 1</ambient>
+            <diffuse>0.5 0.5 0.5 1</diffuse>
+            <specular>0 0 0 1</specular>
+            <emissive>0 0 0 1</emissive>
+            <shading>gouraud</shading>
+            <receive_shadows>on</receive_shadows>
           </material>
         </visual>
         <collision name='collision_handle_bottom'>
@@ -96,11 +104,20 @@
             </box>
           </geometry>
           <material>
-            <script>
-              <uri>model://sweets_box/marker/0503/scripts</uri>
-              <uri>model://sweets_box/marker/0503/textures</uri>
-              <name>Marker/0503</name>
-            </script>
+            <name>Marker/0503</name>
+
+            <ambient>1 1 1 1</ambient>  <!-- 周囲光 (真っ白) -->
+            <diffuse>1 1 1 1</diffuse>  <!-- 反射光 (真っ白) -->
+            <specular>0 0 0 1</specular>  <!-- 鏡面反射 (無し) -->
+            <emissive>0 0 0 0</emissive>  <!-- 発光 (無し) -->
+
+            <pbr>
+              <metal>
+                <albedo_map>marker/0503/textures/BchThin_Id0503_Size0036.png</albedo_map>
+                <max_anisotropy>16</max_anisotropy>
+                <metalness>0.0</metalness> <!-- 金属感を排除 -->
+              </metal>
+            </pbr>
           </material>
         </visual>
         <visual name='handle_front'>
@@ -111,10 +128,14 @@
             </box>
           </geometry>
           <material>
-            <script>
-              <uri>model://base_materials/color/scripts</uri>
-              <name>hsr_color/white</name>
-            </script>
+            <!-- hsr_color/white -->
+            <name>white</name>
+            <ambient>1 1 1 1</ambient>
+            <diffuse>0.5 0.5 0.5 1</diffuse>
+            <specular>0 0 0 1</specular>
+            <emissive>0 0 0 1</emissive>
+            <shading>gouraud</shading>
+            <receive_shadows>on</receive_shadows>
           </material>
         </visual>
         <collision name='collision_handle_front'>
@@ -148,11 +169,20 @@
             </box>
           </geometry>
           <material>
-            <script>
-              <uri>model://sweets_box/marker/0512/scripts</uri>
-              <uri>model://sweets_box/marker/0512/textures</uri>
-              <name>Marker/0512</name>
-            </script>
+            <name>Marker/0512</name>
+
+            <ambient>1 1 1 1</ambient>  <!-- 周囲光 (真っ白) -->
+            <diffuse>1 1 1 1</diffuse>  <!-- 反射光 (真っ白) -->
+            <specular>0 0 0 1</specular>  <!-- 鏡面反射 (無し) -->
+            <emissive>0 0 0 0</emissive>  <!-- 発光 (無し) -->
+
+            <pbr>
+              <metal>
+                <albedo_map>marker/0512/textures/BchThin_Id0512_Size0036.png</albedo_map>
+                <max_anisotropy>16</max_anisotropy>
+                <metalness>0.0</metalness> <!-- 金属感を排除 -->
+              </metal>
+            </pbr>
           </material>
         </visual>
         <visual name='box_front'>
@@ -163,10 +193,13 @@
             </box>
           </geometry>
           <material>
-            <script>
-              <uri>model://base_materials/color/scripts</uri>
-              <name>hsr_color/white_transparency1</name>
-            </script>
+            <!-- hsr_color/white_transparency1 -->
+            <name>white_transparency1</name>
+            <ambient>1 1 1 1</ambient>
+            <diffuse>0.8 0.8 0.8 1</diffuse>
+            <specular>0.9 0.9 0.9 1</specular>
+            <scene_blend>alpha_blend</scene_blend>
+            <depth_write>off</depth_write>
           </material>
         </visual>
         <collision name='collision_box_front'>
@@ -200,10 +233,13 @@
             </box>
           </geometry>
           <material>
-            <script>
-              <uri>model://base_materials/color/scripts</uri>
-              <name>hsr_color/white_transparency1</name>
-            </script>
+            <!-- hsr_color/white_transparency1 -->
+            <name>white_transparency1</name>
+            <ambient>1 1 1 1</ambient>
+            <diffuse>0.8 0.8 0.8 1</diffuse>
+            <specular>0.9 0.9 0.9 1</specular>
+            <scene_blend>alpha_blend</scene_blend>
+            <depth_write>off</depth_write>
           </material>
         </visual>
         <collision name='collision_box_back'>
@@ -237,10 +273,13 @@
             </box>
           </geometry>
           <material>
-            <script>
-              <uri>model://base_materials/color/scripts</uri>
-              <name>hsr_color/white_transparency1</name>
-            </script>
+            <!-- hsr_color/white_transparency1 -->
+            <name>white_transparency1</name>
+            <ambient>1 1 1 1</ambient>
+            <diffuse>0.8 0.8 0.8 1</diffuse>
+            <specular>0.9 0.9 0.9 1</specular>
+            <scene_blend>alpha_blend</scene_blend>
+            <depth_write>off</depth_write>
           </material>
         </visual>
         <collision name='collision_box_right'>
@@ -274,10 +313,13 @@
             </box>
           </geometry>
           <material>
-            <script>
-              <uri>model://base_materials/color/scripts</uri>
-              <name>hsr_color/white_transparency1</name>
-            </script>
+            <!-- hsr_color/white_transparency1 -->
+            <name>white_transparency1</name>
+            <ambient>1 1 1 1</ambient>
+            <diffuse>0.8 0.8 0.8 1</diffuse>
+            <specular>0.9 0.9 0.9 1</specular>
+            <scene_blend>alpha_blend</scene_blend>
+            <depth_write>off</depth_write>
           </material>
         </visual>
         <collision name='collision_box_left'>
@@ -311,10 +353,13 @@
             </box>
           </geometry>
           <material>
-            <script>
-              <uri>model://base_materials/color/scripts</uri>
-              <name>hsr_color/white_transparency1</name>
-            </script>
+            <!-- hsr_color/white_transparency1 -->
+            <name>white_transparency1</name>
+            <ambient>1 1 1 1</ambient>
+            <diffuse>0.8 0.8 0.8 1</diffuse>
+            <specular>0.9 0.9 0.9 1</specular>
+            <scene_blend>alpha_blend</scene_blend>
+            <depth_write>off</depth_write>
           </material>
         </visual>
         <collision name='collision_box_bottom'>

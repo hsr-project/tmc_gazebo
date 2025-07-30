@@ -21,7 +21,7 @@
               <uri>model://hsr_soda/meshes/hsr_soda.dae</uri>
             </mesh>
           </geometry>
-          <material/>
+          
         </visual>
         <collision name='hsr_soda'>
           <pose>0.0 0.0 0.0 0 0 0</pose>

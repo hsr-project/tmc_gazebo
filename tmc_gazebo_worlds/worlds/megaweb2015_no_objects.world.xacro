@@ -11,9 +11,31 @@
         <pose>-3.0 -8.0 8.0 0 1.0 1.5</pose>
       </camera>
     </gui>
-    <include>
-      <uri>model://ground_plane</uri>
-    </include>
+    <model name="ground_plane">
+      <static>true</static>
+      <pose>0 0 0 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <plane>
+              <size>100 100 0.1</size>
+            </plane>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <plane>
+              <size>100 100 0.1</size>
+            </plane>
+          </geometry>
+          <material>
+            <ambient>0.8 0.8 0.8 1</ambient>
+            <diffuse>0.8 0.8 0.8 1</diffuse>
+            <specular>0.8 0.8 0.8 1</specular>
+          </material>
+        </visual>
+      </link>
+    </model>
     <light name='floorlight1' type='spot'>
       <cast_shadows>true</cast_shadows>
       <pose>-3 -3 4 0 0 0</pose>

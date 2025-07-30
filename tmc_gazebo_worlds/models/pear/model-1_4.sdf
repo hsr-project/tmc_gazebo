@@ -21,7 +21,7 @@
               <uri>model://pear/meshes/pear.dae</uri>
             </mesh>
           </geometry>
-          <material/>
+          
         </visual>
         <collision name='pear'>
           <pose>0.0 0.0 -0.015 0 0 0</pose>

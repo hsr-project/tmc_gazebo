@@ -22,11 +22,19 @@
             </box>
           </geometry>
           <material>
-            <script>
-              <uri>model://nasal_inflammation_capsul/scripts</uri>
-              <uri>model://nasal_inflammation_capsul/textures</uri>
-              <name>oral_medicine/nasal_inflammation_capsule</name>
-            </script>
+            <!-- nasal_inflammation_capsul -->
+            <name>capsul</name>
+            <ambient>1 1 1 1</ambient>
+            <diffuse>0.5 0.5 0.5 1.0</diffuse>
+            <specular>0 0 0 1.0</specular>
+            <shininess>12.5</shininess>
+            <pbr>
+              <metal>
+                <albedo_map>textures/nasal_inflammation_capsule.png</albedo_map>
+                <max_anisotropy>16</max_anisotropy>
+                <metalness>0</metalness>
+              </metal>
+            </pbr>
           </material>
         </visual>
         <collision name='collision_capsul'>

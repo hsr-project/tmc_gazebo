@@ -22,10 +22,19 @@
             </box>
           </geometry>
           <material>
-            <script>
-              <uri>model://base_materials/wood/scripts/wood.material</uri>
-              <name>base_materials/wood</name>
-            </script>
+            <!-- base_materials/wood -->
+            <name>wood</name>
+            <ambient>1 1 1 1</ambient>
+            <diffuse>0.5 0.5 0.5 1.0</diffuse>
+            <specular>0 0 0 1.0</specular>
+            <shininess>12.5</shininess>
+            <pbr>
+              <metal>
+                <albedo_map>model://base_materials/wood/textures/light_wood.png</albedo_map>
+                <max_anisotropy>16</max_anisotropy>
+                <metalness>0</metalness>
+              </metal>
+            </pbr>
           </material>
         </visual>
         <collision name='collision_top_board'>
@@ -54,10 +63,14 @@
             </box>
           </geometry>
           <material>
-            <script>
-              <uri>model://base_materials/color/scripts</uri>
-              <name>hsr_color/grey</name>
-            </script>
+            <!-- hsr_color/grey -->
+            <name>grey</name>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.3 0.3 0.3 1</diffuse>
+            <specular>0 0 0 1</specular>
+            <emissive>0 0 0 1</emissive>
+            <shading>gouraud</shading>
+            <receive_shadows>on</receive_shadows>
           </material>
         </visual>
         <collision name='collision_right_pole'>
@@ -86,10 +99,19 @@
             </box>
           </geometry>
           <material>
-            <script>
-              <uri>model://base_materials/wood/scripts/wood.material</uri>
-              <name>base_materials/wood</name>
-            </script>
+            <!-- base_materials/wood -->
+            <name>wood</name>
+            <ambient>1 1 1 1</ambient>
+            <diffuse>0.5 0.5 0.5 1.0</diffuse>
+            <specular>0 0 0 1.0</specular>
+            <shininess>12.5</shininess>
+            <pbr>
+              <metal>
+                <albedo_map>model://base_materials/wood/textures/light_wood.png</albedo_map>
+                <max_anisotropy>16</max_anisotropy>
+                <metalness>0</metalness>
+              </metal>
+            </pbr>
           </material>
         </visual>
         <collision name='collision_right_bottom_pole'>
@@ -118,10 +140,19 @@
             </box>
           </geometry>
           <material>
-            <script>
-              <uri>model://base_materials/wood/scripts/wood.material</uri>
-              <name>base_materials/wood</name>
-            </script>
+            <!-- base_materials/wood -->
+            <name>wood</name>
+            <ambient>1 1 1 1</ambient>
+            <diffuse>0.5 0.5 0.5 1.0</diffuse>
+            <specular>0 0 0 1.0</specular>
+            <shininess>12.5</shininess>
+            <pbr>
+              <metal>
+                <albedo_map>model://base_materials/wood/textures/light_wood.png</albedo_map>
+                <max_anisotropy>16</max_anisotropy>
+                <metalness>0</metalness>
+              </metal>
+            </pbr>
           </material>
         </visual>
         <collision name='collision_bottom_center_pole'>
@@ -150,10 +181,19 @@
             </box>
           </geometry>
           <material>
-            <script>
-              <uri>model://base_materials/wood/scripts/wood.material</uri>
-              <name>base_materials/wood</name>
-            </script>
+            <!-- base_materials/wood -->
+            <name>wood</name>
+            <ambient>1 1 1 1</ambient>
+            <diffuse>0.5 0.5 0.5 1.0</diffuse>
+            <specular>0 0 0 1.0</specular>
+            <shininess>12.5</shininess>
+            <pbr>
+              <metal>
+                <albedo_map>model://base_materials/wood/textures/light_wood.png</albedo_map>
+                <max_anisotropy>16</max_anisotropy>
+                <metalness>0</metalness>
+              </metal>
+            </pbr>
           </material>
         </visual>
         <collision name='collision_left_bottom_pole'>
@@ -182,11 +222,20 @@
             </box>
           </geometry>
           <material>
-            <script>
-              <uri>model://bed_table/marker/0010/scripts</uri>
-              <uri>model://bed_table/marker/0010/textures</uri>
-              <name>Marker/0010</name>
-            </script>
+            <name>Marker/0010</name>
+
+            <ambient>1 1 1 1</ambient>  <!-- 周囲光 (真っ白) -->
+            <diffuse>1 1 1 1</diffuse>  <!-- 反射光 (真っ白) -->
+            <specular>0 0 0 1</specular>  <!-- 鏡面反射 (無し) -->
+            <emissive>0 0 0 0</emissive>  <!-- 発光 (無し) -->
+
+            <pbr>
+              <metal>
+                <albedo_map>marker/0010/textures/BchThin_Id0010_Size0060.png</albedo_map>
+                <max_anisotropy>16</max_anisotropy>
+                <metalness>0.0</metalness> <!-- 金属感を排除 -->
+              </metal>
+            </pbr>
           </material>
         </visual>
         <collision name='collision_marker_0010'>
@@ -215,10 +264,19 @@
             </box>
           </geometry>
           <material>
-            <script>
-              <uri>model://base_materials/wood/scripts/wood.material</uri>
-              <name>base_materials/wood</name>
-            </script>
+            <!-- base_materials/wood -->
+            <name>wood</name>
+            <ambient>1 1 1 1</ambient>
+            <diffuse>0.5 0.5 0.5 1.0</diffuse>
+            <specular>0 0 0 1.0</specular>
+            <shininess>12.5</shininess>
+            <pbr>
+              <metal>
+                <albedo_map>model://base_materials/wood/textures/light_wood.png</albedo_map>
+                <max_anisotropy>16</max_anisotropy>
+                <metalness>0</metalness>
+              </metal>
+            </pbr>
           </material>
         </visual>
         <collision name='collision_marker_0010_back_plate'>

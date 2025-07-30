@@ -22,11 +22,19 @@
             </box>
           </geometry>
           <material>
-            <script>
-              <uri>model://base_materials/marble/scripts</uri>
-              <uri>model://base_materials/marble/textures</uri>
-              <name>marble/001</name>
-            </script>
+            <!-- marble/001 -->
+            <name>marble001</name>
+            <ambient>1 1 1 1</ambient>
+            <diffuse>0.5 0.5 0.5 1.0</diffuse>
+            <specular>0 0 0 1.0</specular>
+            <shininess>12.5</shininess>
+            <pbr>
+              <metal>
+                <albedo_map>model://base_materials/marble/textures/marble001.png</albedo_map>
+                <max_anisotropy>16</max_anisotropy>
+                <metalness>0</metalness>
+              </metal>
+            </pbr>
           </material>
         </visual>
         <collision name='collision_left_board'>
@@ -55,11 +63,19 @@
             </box>
           </geometry>
           <material>
-            <script>
-              <uri>model://base_materials/marble/scripts</uri>
-              <uri>model://base_materials/marble/textures</uri>
-              <name>marble/001</name>
-            </script>
+            <!-- marble/001 -->
+            <name>marble001</name>
+            <ambient>1 1 1 1</ambient>
+            <diffuse>0.5 0.5 0.5 1.0</diffuse>
+            <specular>0 0 0 1.0</specular>
+            <shininess>12.5</shininess>
+            <pbr>
+              <metal>
+                <albedo_map>model://base_materials/marble/textures/marble001.png</albedo_map>
+                <max_anisotropy>16</max_anisotropy>
+                <metalness>0</metalness>
+              </metal>
+            </pbr>
           </material>
         </visual>
         <collision name='collision_center_vertical_board1'>
@@ -88,11 +104,19 @@
             </box>
           </geometry>
           <material>
-            <script>
-              <uri>model://base_materials/marble/scripts</uri>
-              <uri>model://base_materials/marble/textures</uri>
-              <name>marble/001</name>
-            </script>
+            <!-- marble/001 -->
+            <name>marble001</name>
+            <ambient>1 1 1 1</ambient>
+            <diffuse>0.5 0.5 0.5 1.0</diffuse>
+            <specular>0 0 0 1.0</specular>
+            <shininess>12.5</shininess>
+            <pbr>
+              <metal>
+                <albedo_map>model://base_materials/marble/textures/marble001.png</albedo_map>
+                <max_anisotropy>16</max_anisotropy>
+                <metalness>0</metalness>
+              </metal>
+            </pbr>
           </material>
         </visual>
         <collision name='collision_center_vertical_board2'>
@@ -121,11 +145,19 @@
             </box>
           </geometry>
           <material>
-            <script>
-              <uri>model://base_materials/marble/scripts</uri>
-              <uri>model://base_materials/marble/textures</uri>
-              <name>marble/001</name>
-            </script>
+            <!-- marble/001 -->
+            <name>marble001</name>
+            <ambient>1 1 1 1</ambient>
+            <diffuse>0.5 0.5 0.5 1.0</diffuse>
+            <specular>0 0 0 1.0</specular>
+            <shininess>12.5</shininess>
+            <pbr>
+              <metal>
+                <albedo_map>model://base_materials/marble/textures/marble001.png</albedo_map>
+                <max_anisotropy>16</max_anisotropy>
+                <metalness>0</metalness>
+              </metal>
+            </pbr>
           </material>
         </visual>
         <collision name='collision_center_horizon_board1'>
@@ -154,11 +186,19 @@
             </box>
           </geometry>
           <material>
-            <script>
-              <uri>model://base_materials/marble/scripts</uri>
-              <uri>model://base_materials/marble/textures</uri>
-              <name>marble/001</name>
-            </script>
+            <!-- marble/001 -->
+            <name>marble001</name>
+            <ambient>1 1 1 1</ambient>
+            <diffuse>0.5 0.5 0.5 1.0</diffuse>
+            <specular>0 0 0 1.0</specular>
+            <shininess>12.5</shininess>
+            <pbr>
+              <metal>
+                <albedo_map>model://base_materials/marble/textures/marble001.png</albedo_map>
+                <max_anisotropy>16</max_anisotropy>
+                <metalness>0</metalness>
+              </metal>
+            </pbr>
           </material>
         </visual>
         <collision name='collision_center_horizon_board2'>
@@ -187,11 +227,19 @@
             </box>
           </geometry>
           <material>
-            <script>
-              <uri>model://base_materials/marble/scripts</uri>
-              <uri>model://base_materials/marble/textures</uri>
-              <name>marble/001</name>
-            </script>
+            <!-- marble/001 -->
+            <name>marble001</name>
+            <ambient>1 1 1 1</ambient>
+            <diffuse>0.5 0.5 0.5 1.0</diffuse>
+            <specular>0 0 0 1.0</specular>
+            <shininess>12.5</shininess>
+            <pbr>
+              <metal>
+                <albedo_map>model://base_materials/marble/textures/marble001.png</albedo_map>
+                <max_anisotropy>16</max_anisotropy>
+                <metalness>0</metalness>
+              </metal>
+            </pbr>
           </material>
         </visual>
         <collision name='collision_right_board'>
@@ -220,11 +268,19 @@
             </box>
           </geometry>
           <material>
-            <script>
-              <uri>model://base_materials/marble/scripts</uri>
-              <uri>model://base_materials/marble/textures</uri>
-              <name>marble/001</name>
-            </script>
+            <!-- marble/001 -->
+            <name>marble001</name>
+            <ambient>1 1 1 1</ambient>
+            <diffuse>0.5 0.5 0.5 1.0</diffuse>
+            <specular>0 0 0 1.0</specular>
+            <shininess>12.5</shininess>
+            <pbr>
+              <metal>
+                <albedo_map>model://base_materials/marble/textures/marble001.png</albedo_map>
+                <max_anisotropy>16</max_anisotropy>
+                <metalness>0</metalness>
+              </metal>
+            </pbr>
           </material>
         </visual>
         <collision name='collision_top_board'>
@@ -253,11 +309,19 @@
             </box>
           </geometry>
           <material>
-            <script>
-              <uri>model://base_materials/marble/scripts</uri>
-              <uri>model://base_materials/marble/textures</uri>
-              <name>marble/001</name>
-            </script>
+            <!-- marble/001 -->
+            <name>marble001</name>
+            <ambient>1 1 1 1</ambient>
+            <diffuse>0.5 0.5 0.5 1.0</diffuse>
+            <specular>0 0 0 1.0</specular>
+            <shininess>12.5</shininess>
+            <pbr>
+              <metal>
+                <albedo_map>model://base_materials/marble/textures/marble001.png</albedo_map>
+                <max_anisotropy>16</max_anisotropy>
+                <metalness>0</metalness>
+              </metal>
+            </pbr>
           </material>
         </visual>
         <collision name='collision_bottom_board'>
@@ -286,11 +350,19 @@
             </box>
           </geometry>
           <material>
-            <script>
-              <uri>model://base_materials/marble/scripts</uri>
-              <uri>model://base_materials/marble/textures</uri>
-              <name>marble/001</name>
-            </script>
+            <!-- marble/001 -->
+            <name>marble001</name>
+            <ambient>1 1 1 1</ambient>
+            <diffuse>0.5 0.5 0.5 1.0</diffuse>
+            <specular>0 0 0 1.0</specular>
+            <shininess>12.5</shininess>
+            <pbr>
+              <metal>
+                <albedo_map>model://base_materials/marble/textures/marble001.png</albedo_map>
+                <max_anisotropy>16</max_anisotropy>
+                <metalness>0</metalness>
+              </metal>
+            </pbr>
           </material>
         </visual>
         <collision name='collision_top_drawer1'>
@@ -319,10 +391,14 @@
             </mesh>
           </geometry>
           <material>
-            <script>
-              <uri>model://base_materials/color/scripts</uri>
-              <name>hsr_color/grey</name>
-            </script>
+            <!-- hsr_color/grey -->
+            <name>grey</name>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.3 0.3 0.3 1</diffuse>
+            <specular>0 0 0 1</specular>
+            <emissive>0 0 0 1</emissive>
+            <shading>gouraud</shading>
+            <receive_shadows>on</receive_shadows>
           </material>
         </visual>
         <collision name='collision_top_drawer1_handle'>
@@ -351,11 +427,19 @@
             </box>
           </geometry>
           <material>
-            <script>
-              <uri>model://base_materials/marble/scripts</uri>
-              <uri>model://base_materials/marble/textures</uri>
-              <name>marble/001</name>
-            </script>
+            <!-- marble/001 -->
+            <name>marble001</name>
+            <ambient>1 1 1 1</ambient>
+            <diffuse>0.5 0.5 0.5 1.0</diffuse>
+            <specular>0 0 0 1.0</specular>
+            <shininess>12.5</shininess>
+            <pbr>
+              <metal>
+                <albedo_map>model://base_materials/marble/textures/marble001.png</albedo_map>
+                <max_anisotropy>16</max_anisotropy>
+                <metalness>0</metalness>
+              </metal>
+            </pbr>
           </material>
         </visual>
         <collision name='collision_top_drawer2'>
@@ -384,10 +468,14 @@
             </mesh>
           </geometry>
           <material>
-            <script>
-              <uri>model://base_materials/color/scripts</uri>
-              <name>hsr_color/grey</name>
-            </script>
+            <!-- hsr_color/grey -->
+            <name>grey</name>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.3 0.3 0.3 1</diffuse>
+            <specular>0 0 0 1</specular>
+            <emissive>0 0 0 1</emissive>
+            <shading>gouraud</shading>
+            <receive_shadows>on</receive_shadows>
           </material>
         </visual>
         <collision name='collision_top_drawer2_handle'>
@@ -416,11 +504,19 @@
             </box>
           </geometry>
           <material>
-            <script>
-              <uri>model://base_materials/marble/scripts</uri>
-              <uri>model://base_materials/marble/textures</uri>
-              <name>marble/001</name>
-            </script>
+            <!-- marble/001 -->
+            <name>marble001</name>
+            <ambient>1 1 1 1</ambient>
+            <diffuse>0.5 0.5 0.5 1.0</diffuse>
+            <specular>0 0 0 1.0</specular>
+            <shininess>12.5</shininess>
+            <pbr>
+              <metal>
+                <albedo_map>model://base_materials/marble/textures/marble001.png</albedo_map>
+                <max_anisotropy>16</max_anisotropy>
+                <metalness>0</metalness>
+              </metal>
+            </pbr>
           </material>
         </visual>
         <collision name='collision_top_drawer3'>
@@ -449,10 +545,14 @@
             </mesh>
           </geometry>
           <material>
-            <script>
-              <uri>model://base_materials/color/scripts</uri>
-              <name>hsr_color/grey</name>
-            </script>
+            <!-- hsr_color/grey -->
+            <name>grey</name>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.3 0.3 0.3 1</diffuse>
+            <specular>0 0 0 1</specular>
+            <emissive>0 0 0 1</emissive>
+            <shading>gouraud</shading>
+            <receive_shadows>on</receive_shadows>
           </material>
         </visual>
         <collision name='collision_top_drawer3_handle'>
@@ -481,11 +581,19 @@
             </box>
           </geometry>
           <material>
-            <script>
-              <uri>model://base_materials/marble/scripts</uri>
-              <uri>model://base_materials/marble/textures</uri>
-              <name>marble/001</name>
-            </script>
+            <!-- marble/001 -->
+            <name>marble001</name>
+            <ambient>1 1 1 1</ambient>
+            <diffuse>0.5 0.5 0.5 1.0</diffuse>
+            <specular>0 0 0 1.0</specular>
+            <shininess>12.5</shininess>
+            <pbr>
+              <metal>
+                <albedo_map>model://base_materials/marble/textures/marble001.png</albedo_map>
+                <max_anisotropy>16</max_anisotropy>
+                <metalness>0</metalness>
+              </metal>
+            </pbr>
           </material>
         </visual>
         <collision name='collision_bottom_drawer1'>
@@ -514,10 +622,14 @@
             </mesh>
           </geometry>
           <material>
-            <script>
-              <uri>model://base_materials/color/scripts</uri>
-              <name>hsr_color/grey</name>
-            </script>
+            <!-- hsr_color/grey -->
+            <name>grey</name>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.3 0.3 0.3 1</diffuse>
+            <specular>0 0 0 1</specular>
+            <emissive>0 0 0 1</emissive>
+            <shading>gouraud</shading>
+            <receive_shadows>on</receive_shadows>
           </material>
         </visual>
         <collision name='collision_bottom_drawer1_handle'>
@@ -546,11 +658,19 @@
             </box>
           </geometry>
           <material>
-            <script>
-              <uri>model://base_materials/marble/scripts</uri>
-              <uri>model://base_materials/marble/textures</uri>
-              <name>marble/001</name>
-            </script>
+            <!-- marble/001 -->
+            <name>marble001</name>
+            <ambient>1 1 1 1</ambient>
+            <diffuse>0.5 0.5 0.5 1.0</diffuse>
+            <specular>0 0 0 1.0</specular>
+            <shininess>12.5</shininess>
+            <pbr>
+              <metal>
+                <albedo_map>model://base_materials/marble/textures/marble001.png</albedo_map>
+                <max_anisotropy>16</max_anisotropy>
+                <metalness>0</metalness>
+              </metal>
+            </pbr>
           </material>
         </visual>
         <collision name='collision_bottom_drawer2'>
@@ -579,10 +699,14 @@
             </mesh>
           </geometry>
           <material>
-            <script>
-              <uri>model://base_materials/color/scripts</uri>
-              <name>hsr_color/grey</name>
-            </script>
+            <!-- hsr_color/grey -->
+            <name>grey</name>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.3 0.3 0.3 1</diffuse>
+            <specular>0 0 0 1</specular>
+            <emissive>0 0 0 1</emissive>
+            <shading>gouraud</shading>
+            <receive_shadows>on</receive_shadows>
           </material>
         </visual>
         <collision name='collision_bottom_drawer2_handle'>
@@ -611,11 +735,19 @@
             </box>
           </geometry>
           <material>
-            <script>
-              <uri>model://base_materials/marble/scripts</uri>
-              <uri>model://base_materials/marble/textures</uri>
-              <name>marble/001</name>
-            </script>
+            <!-- marble/001 -->
+            <name>marble001</name>
+            <ambient>1 1 1 1</ambient>
+            <diffuse>0.5 0.5 0.5 1.0</diffuse>
+            <specular>0 0 0 1.0</specular>
+            <shininess>12.5</shininess>
+            <pbr>
+              <metal>
+                <albedo_map>model://base_materials/marble/textures/marble001.png</albedo_map>
+                <max_anisotropy>16</max_anisotropy>
+                <metalness>0</metalness>
+              </metal>
+            </pbr>
           </material>
         </visual>
         <collision name='collision_door'>
@@ -644,10 +776,14 @@
             </mesh>
           </geometry>
           <material>
-            <script>
-              <uri>model://base_materials/color/scripts</uri>
-              <name>hsr_color/grey</name>
-            </script>
+            <!-- hsr_color/grey -->
+            <name>grey</name>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.3 0.3 0.3 1</diffuse>
+            <specular>0 0 0 1</specular>
+            <emissive>0 0 0 1</emissive>
+            <shading>gouraud</shading>
+            <receive_shadows>on</receive_shadows>
           </material>
         </visual>
         <collision name='collision_door_handle'>
@@ -676,11 +812,19 @@
             </box>
           </geometry>
           <material>
-            <script>
-              <uri>model://base_materials/marble/scripts</uri>
-              <uri>model://base_materials/marble/textures</uri>
-              <name>marble/001</name>
-            </script>
+            <!-- marble/001 -->
+            <name>marble001</name>
+            <ambient>1 1 1 1</ambient>
+            <diffuse>0.5 0.5 0.5 1.0</diffuse>
+            <specular>0 0 0 1.0</specular>
+            <shininess>12.5</shininess>
+            <pbr>
+              <metal>
+                <albedo_map>model://base_materials/marble/textures/marble001.png</albedo_map>
+                <max_anisotropy>16</max_anisotropy>
+                <metalness>0</metalness>
+              </metal>
+            </pbr>
           </material>
         </visual>
         <collision name='collision_back_board1'>
@@ -709,11 +853,19 @@
             </box>
           </geometry>
           <material>
-            <script>
-              <uri>model://base_materials/marble/scripts</uri>
-              <uri>model://base_materials/marble/textures</uri>
-              <name>marble/001</name>
-            </script>
+            <!-- marble/001 -->
+            <name>marble001</name>
+            <ambient>1 1 1 1</ambient>
+            <diffuse>0.5 0.5 0.5 1.0</diffuse>
+            <specular>0 0 0 1.0</specular>
+            <shininess>12.5</shininess>
+            <pbr>
+              <metal>
+                <albedo_map>model://base_materials/marble/textures/marble001.png</albedo_map>
+                <max_anisotropy>16</max_anisotropy>
+                <metalness>0</metalness>
+              </metal>
+            </pbr>
           </material>
         </visual>
         <collision name='collision_back_board2'>
@@ -743,9 +895,11 @@
             </cylinder>
           </geometry>
           <material>
-            <script>
-              <name>Gazebo/Black</name>
-            </script>
+            <!-- Black -->
+            <ambient>0.0 0.0 0.0 1.0</ambient>
+            <diffuse>0.0 0.0 0.0 1.0</diffuse>
+            <specular>0.1 0.1 0.1 1.0</specular>
+            <shininess>5.0</shininess>
           </material>
         </visual>
         <collision name='collision_right_front_caster'>
@@ -776,9 +930,11 @@
             </cylinder>
           </geometry>
           <material>
-            <script>
-              <name>Gazebo/Black</name>
-            </script>
+            <!-- Black -->
+            <ambient>0.0 0.0 0.0 1.0</ambient>
+            <diffuse>0.0 0.0 0.0 1.0</diffuse>
+            <specular>0.1 0.1 0.1 1.0</specular>
+            <shininess>5.0</shininess>
           </material>
         </visual>
         <collision name='collision_left_front_caster'>
@@ -809,9 +965,11 @@
             </cylinder>
           </geometry>
           <material>
-            <script>
-              <name>Gazebo/Black</name>
-            </script>
+            <!-- Black -->
+            <ambient>0.0 0.0 0.0 1.0</ambient>
+            <diffuse>0.0 0.0 0.0 1.0</diffuse>
+            <specular>0.1 0.1 0.1 1.0</specular>
+            <shininess>5.0</shininess>
           </material>
         </visual>
         <collision name='collision_right_back_caster'>
@@ -842,9 +1000,11 @@
             </cylinder>
           </geometry>
           <material>
-            <script>
-              <name>Gazebo/Black</name>
-            </script>
+            <!-- Black -->
+            <ambient>0.0 0.0 0.0 1.0</ambient>
+            <diffuse>0.0 0.0 0.0 1.0</diffuse>
+            <specular>0.1 0.1 0.1 1.0</specular>
+            <shininess>5.0</shininess>
           </material>
         </visual>
         <collision name='collision_left_back_caster'>
@@ -875,9 +1035,11 @@
             </cylinder>
           </geometry>
           <material>
-            <script>
-              <name>Gazebo/Black</name>
-            </script>
+            <!-- Black -->
+            <ambient>0.0 0.0 0.0 1.0</ambient>
+            <diffuse>0.0 0.0 0.0 1.0</diffuse>
+            <specular>0.1 0.1 0.1 1.0</specular>
+            <shininess>5.0</shininess>
           </material>
         </visual>
         <collision name='collision_center_front_caster1'>
@@ -908,9 +1070,11 @@
             </cylinder>
           </geometry>
           <material>
-            <script>
-              <name>Gazebo/Black</name>
-            </script>
+            <!-- Black -->
+            <ambient>0.0 0.0 0.0 1.0</ambient>
+            <diffuse>0.0 0.0 0.0 1.0</diffuse>
+            <specular>0.1 0.1 0.1 1.0</specular>
+            <shininess>5.0</shininess>
           </material>
         </visual>
         <collision name='collision_center_front_caster2'>

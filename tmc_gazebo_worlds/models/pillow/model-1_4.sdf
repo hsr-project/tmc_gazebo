@@ -21,7 +21,7 @@
               <uri>model://pillow/meshes/pillow.dae</uri>
             </mesh>
           </geometry>
-          <material/>
+          
         </visual>
         <collision name='pillow'>
           <pose>0.0 0.0 0.0 0 0 0</pose>

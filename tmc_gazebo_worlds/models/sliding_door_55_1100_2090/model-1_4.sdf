@@ -21,10 +21,14 @@
             </box>
           </geometry>
           <material>
-            <script>
-              <uri>model://base_materials/color/scripts</uri>
-              <name>hsr_color/white</name>
-            </script>
+            <!-- hsr_color/white -->
+            <name>white</name>
+            <ambient>1 1 1 1</ambient>
+            <diffuse>0.5 0.5 0.5 1</diffuse>
+            <specular>0 0 0 1</specular>
+            <emissive>0 0 0 1</emissive>
+            <shading>gouraud</shading>
+            <receive_shadows>on</receive_shadows>
           </material>
         </visual>
         <collision name='collision_top_guard'>
@@ -53,10 +57,14 @@
             </box>
           </geometry>
           <material>
-            <script>
-              <uri>model://base_materials/color/scripts</uri>
-              <name>hsr_color/white</name>
-            </script>
+            <!-- hsr_color/white -->
+            <name>white</name>
+            <ambient>1 1 1 1</ambient>
+            <diffuse>0.5 0.5 0.5 1</diffuse>
+            <specular>0 0 0 1</specular>
+            <emissive>0 0 0 1</emissive>
+            <shading>gouraud</shading>
+            <receive_shadows>on</receive_shadows>
           </material>
         </visual>
         <collision name='collision_front_guard'>
@@ -85,10 +93,19 @@
             </box>
           </geometry>
           <material>
-            <script>
-              <uri>model://base_materials/wood/scripts/wood.material</uri>
-              <name>base_materials/wood</name>
-            </script>
+            <!-- base_materials/wood -->
+            <name>wood</name>
+            <ambient>1 1 1 1</ambient>
+            <diffuse>0.5 0.5 0.5 1.0</diffuse>
+            <specular>0 0 0 1.0</specular>
+            <shininess>12.5</shininess>
+            <pbr>
+              <metal>
+                <albedo_map>model://base_materials/wood/textures/light_wood.png</albedo_map>
+                <max_anisotropy>16</max_anisotropy>
+                <metalness>0</metalness>
+              </metal>
+            </pbr>
           </material>
         </visual>
         <collision name='collision_top_frame'>
@@ -117,10 +134,19 @@
             </box>
           </geometry>
           <material>
-            <script>
-              <uri>model://base_materials/wood/scripts/wood.material</uri>
-              <name>base_materials/wood</name>
-            </script>
+            <!-- base_materials/wood -->
+            <name>wood</name>
+            <ambient>1 1 1 1</ambient>
+            <diffuse>0.5 0.5 0.5 1.0</diffuse>
+            <specular>0 0 0 1.0</specular>
+            <shininess>12.5</shininess>
+            <pbr>
+              <metal>
+                <albedo_map>model://base_materials/wood/textures/light_wood.png</albedo_map>
+                <max_anisotropy>16</max_anisotropy>
+                <metalness>0</metalness>
+              </metal>
+            </pbr>
           </material>
         </visual>
         <collision name='collision_right_frame'>
@@ -149,10 +175,19 @@
             </box>
           </geometry>
           <material>
-            <script>
-              <uri>model://base_materials/wood/scripts/wood.material</uri>
-              <name>base_materials/wood</name>
-            </script>
+            <!-- base_materials/wood -->
+            <name>wood</name>
+            <ambient>1 1 1 1</ambient>
+            <diffuse>0.5 0.5 0.5 1.0</diffuse>
+            <specular>0 0 0 1.0</specular>
+            <shininess>12.5</shininess>
+            <pbr>
+              <metal>
+                <albedo_map>model://base_materials/wood/textures/light_wood.png</albedo_map>
+                <max_anisotropy>16</max_anisotropy>
+                <metalness>0</metalness>
+              </metal>
+            </pbr>
           </material>
         </visual>
         <collision name='collision_left_frame'>
@@ -181,10 +216,19 @@
             </box>
           </geometry>
           <material>
-            <script>
-              <uri>model://base_materials/wood/scripts/wood.material</uri>
-              <name>base_materials/wood</name>
-            </script>
+            <!-- base_materials/wood -->
+            <name>wood</name>
+            <ambient>1 1 1 1</ambient>
+            <diffuse>0.5 0.5 0.5 1.0</diffuse>
+            <specular>0 0 0 1.0</specular>
+            <shininess>12.5</shininess>
+            <pbr>
+              <metal>
+                <albedo_map>model://base_materials/wood/textures/light_wood.png</albedo_map>
+                <max_anisotropy>16</max_anisotropy>
+                <metalness>0</metalness>
+              </metal>
+            </pbr>
           </material>
         </visual>
         <collision name='collision_bottom_frame'>
@@ -214,10 +258,14 @@
             </cylinder>
           </geometry>
           <material>
-            <script>
-              <uri>model://base_materials/color/scripts</uri>
-              <name>hsr_color/grey</name>
-            </script>
+            <!-- hsr_color/grey -->
+            <name>grey</name>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.3 0.3 0.3 1</diffuse>
+            <specular>0 0 0 1</specular>
+            <emissive>0 0 0 1</emissive>
+            <shading>gouraud</shading>
+            <receive_shadows>on</receive_shadows>
           </material>
         </visual>
         <collision name='collision_handle_top_frame'>
@@ -248,10 +296,14 @@
             </cylinder>
           </geometry>
           <material>
-            <script>
-              <uri>model://base_materials/color/scripts</uri>
-              <name>hsr_color/grey</name>
-            </script>
+            <!-- hsr_color/grey -->
+            <name>grey</name>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.3 0.3 0.3 1</diffuse>
+            <specular>0 0 0 1</specular>
+            <emissive>0 0 0 1</emissive>
+            <shading>gouraud</shading>
+            <receive_shadows>on</receive_shadows>
           </material>
         </visual>
         <collision name='collision_handle_bottom_frame'>
@@ -282,10 +334,14 @@
             </cylinder>
           </geometry>
           <material>
-            <script>
-              <uri>model://base_materials/color/scripts</uri>
-              <name>hsr_color/grey</name>
-            </script>
+            <!-- hsr_color/grey -->
+            <name>grey</name>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.3 0.3 0.3 1</diffuse>
+            <specular>0 0 0 1</specular>
+            <emissive>0 0 0 1</emissive>
+            <shading>gouraud</shading>
+            <receive_shadows>on</receive_shadows>
           </material>
         </visual>
         <collision name='collision_handle_front_frame'>
@@ -316,10 +372,14 @@
             </cylinder>
           </geometry>
           <material>
-            <script>
-              <uri>model://base_materials/color/scripts</uri>
-              <name>hsr_color/grey</name>
-            </script>
+            <!-- hsr_color/grey -->
+            <name>grey</name>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.3 0.3 0.3 1</diffuse>
+            <specular>0 0 0 1</specular>
+            <emissive>0 0 0 1</emissive>
+            <shading>gouraud</shading>
+            <receive_shadows>on</receive_shadows>
           </material>
         </visual>
         <collision name='collision_handle_back_frame'>
@@ -349,10 +409,14 @@
             </sphere>
           </geometry>
           <material>
-            <script>
-              <uri>model://base_materials/color/scripts</uri>
-              <name>hsr_color/grey</name>
-            </script>
+            <!-- hsr_color/grey -->
+            <name>grey</name>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.3 0.3 0.3 1</diffuse>
+            <specular>0 0 0 1</specular>
+            <emissive>0 0 0 1</emissive>
+            <shading>gouraud</shading>
+            <receive_shadows>on</receive_shadows>
           </material>
         </visual>
         <collision name='collision_handle_front_top_corner'>
@@ -381,10 +445,14 @@
             </sphere>
           </geometry>
           <material>
-            <script>
-              <uri>model://base_materials/color/scripts</uri>
-              <name>hsr_color/grey</name>
-            </script>
+            <!-- hsr_color/grey -->
+            <name>grey</name>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.3 0.3 0.3 1</diffuse>
+            <specular>0 0 0 1</specular>
+            <emissive>0 0 0 1</emissive>
+            <shading>gouraud</shading>
+            <receive_shadows>on</receive_shadows>
           </material>
         </visual>
         <collision name='collision_handle_front_bottom_corner'>
@@ -413,10 +481,14 @@
             </sphere>
           </geometry>
           <material>
-            <script>
-              <uri>model://base_materials/color/scripts</uri>
-              <name>hsr_color/grey</name>
-            </script>
+            <!-- hsr_color/grey -->
+            <name>grey</name>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.3 0.3 0.3 1</diffuse>
+            <specular>0 0 0 1</specular>
+            <emissive>0 0 0 1</emissive>
+            <shading>gouraud</shading>
+            <receive_shadows>on</receive_shadows>
           </material>
         </visual>
         <collision name='collision_handle_back_top_corner'>
@@ -445,10 +517,14 @@
             </sphere>
           </geometry>
           <material>
-            <script>
-              <uri>model://base_materials/color/scripts</uri>
-              <name>hsr_color/grey</name>
-            </script>
+            <!-- hsr_color/grey -->
+            <name>grey</name>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.3 0.3 0.3 1</diffuse>
+            <specular>0 0 0 1</specular>
+            <emissive>0 0 0 1</emissive>
+            <shading>gouraud</shading>
+            <receive_shadows>on</receive_shadows>
           </material>
         </visual>
         <collision name='collision_handle_back_bottom_corner'>
@@ -478,10 +554,14 @@
             </cylinder>
           </geometry>
           <material>
-            <script>
-              <uri>model://base_materials/color/scripts</uri>
-              <name>hsr_color/grey</name>
-            </script>
+            <!-- hsr_color/grey -->
+            <name>grey</name>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.3 0.3 0.3 1</diffuse>
+            <specular>0 0 0 1</specular>
+            <emissive>0 0 0 1</emissive>
+            <shading>gouraud</shading>
+            <receive_shadows>on</receive_shadows>
           </material>
         </visual>
         <collision name='collision_handle_lock1'>
@@ -512,10 +592,14 @@
             </cylinder>
           </geometry>
           <material>
-            <script>
-              <uri>model://base_materials/color/scripts</uri>
-              <name>hsr_color/grey</name>
-            </script>
+            <!-- hsr_color/grey -->
+            <name>grey</name>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.3 0.3 0.3 1</diffuse>
+            <specular>0 0 0 1</specular>
+            <emissive>0 0 0 1</emissive>
+            <shading>gouraud</shading>
+            <receive_shadows>on</receive_shadows>
           </material>
         </visual>
         <collision name='collision_handle_lock2'>

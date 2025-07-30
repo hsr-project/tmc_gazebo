@@ -22,11 +22,15 @@
             </mesh>
           </geometry>
           <material>
-            <script>
-              <uri>model://base_materials/cloth/scripts</uri>
-              <uri>model://base_materials/cloth/textures</uri>
-              <name>cloth/black</name>
-            </script>
+            <name>cloth</name>
+            <pbr>
+              <metal>
+                <albedo_map>model://base_materials/cloth/textures/cloth_black.png</albedo_map>
+                <max_anisotropy>16</max_anisotropy>
+                <scale>0.1 0.1</scale>
+                <metalness>0</metalness>
+              </metal>
+            </pbr>
           </material>
         </visual>
         <collision name='collision_seat'>

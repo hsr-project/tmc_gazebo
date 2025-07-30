@@ -21,7 +21,7 @@
               <uri>model://denden_mug_mountain/meshes/denden_mug_mountain.dae</uri>
             </mesh>
           </geometry>
-          <material/>
+          
         </visual>
         <collision name='denden_mug_mountain'>
           <pose>0.0 0.0 0.0 0 0 0</pose>

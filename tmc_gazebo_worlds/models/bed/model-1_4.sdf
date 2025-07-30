@@ -21,11 +21,15 @@
             </box>
           </geometry>
           <material>
-            <script>
-              <uri>model://base_materials/cloth/scripts</uri>
-              <uri>model://base_materials/cloth/textures</uri>
-              <name>cloth/black</name>
-            </script>
+            <name>cloth</name>
+            <pbr>
+              <metal>
+                <albedo_map>model://base_materials/cloth/textures/cloth_black.png</albedo_map>
+                <max_anisotropy>16</max_anisotropy>
+                <scale>0.1 0.1</scale>
+                <metalness>0</metalness>
+              </metal>
+            </pbr>
           </material>
         </visual>
         <collision name='collision_cushion'>
@@ -54,10 +58,13 @@
             </box>
           </geometry>
           <material>
-            <script>
-              <uri>model://base_materials/color/scripts</uri>
-              <name>hsr_color/grey</name>
-            </script>
+            <name>grey</name>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.3 0.3 0.3 1</diffuse>
+            <specular>0 0 0 1</specular>
+            <emissive>0 0 0 1</emissive>
+            <shading>gouraud</shading>
+            <receive_shadows>on</receive_shadows>
           </material>
         </visual>
         <collision name='collision_top_frame'>
@@ -87,10 +94,13 @@
             </cylinder>
           </geometry>
           <material>
-            <script>
-              <uri>model://base_materials/color/scripts</uri>
-              <name>hsr_color/grey</name>
-            </script>
+            <name>grey</name>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.3 0.3 0.3 1</diffuse>
+            <specular>0 0 0 1</specular>
+            <emissive>0 0 0 1</emissive>
+            <shading>gouraud</shading>
+            <receive_shadows>on</receive_shadows>
           </material>
         </visual>
         <collision name='collision_right_front_pole'>
@@ -121,9 +131,11 @@
             </cylinder>
           </geometry>
           <material>
-            <script>
-              <name>Gazebo/Black</name>
-            </script>
+            <!-- Black -->
+            <ambient>0.0 0.0 0.0 1.0</ambient>
+            <diffuse>0.0 0.0 0.0 1.0</diffuse>
+            <specular>0.1 0.1 0.1 1.0</specular>
+            <shininess>5.0</shininess>
           </material>
         </visual>
         <collision name='collision_right_front_caster'>
@@ -154,10 +166,14 @@
             </cylinder>
           </geometry>
           <material>
-            <script>
-              <uri>model://base_materials/color/scripts</uri>
-              <name>hsr_color/grey</name>
-            </script>
+            <!-- hsr_color/grey -->
+            <name>grey</name>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.3 0.3 0.3 1</diffuse>
+            <specular>0 0 0 1</specular>
+            <emissive>0 0 0 1</emissive>
+            <shading>gouraud</shading>
+            <receive_shadows>on</receive_shadows>
           </material>
         </visual>
         <collision name='collision_right_back_pole'>
@@ -188,9 +204,11 @@
             </cylinder>
           </geometry>
           <material>
-            <script>
-              <name>Gazebo/Black</name>
-            </script>
+            <!-- Black -->
+            <ambient>0.0 0.0 0.0 1.0</ambient>
+            <diffuse>0.0 0.0 0.0 1.0</diffuse>
+            <specular>0.1 0.1 0.1 1.0</specular>
+            <shininess>5.0</shininess>
           </material>
         </visual>
         <collision name='collision_back_front_caster'>
@@ -221,10 +239,14 @@
             </cylinder>
           </geometry>
           <material>
-            <script>
-              <uri>model://base_materials/color/scripts</uri>
-              <name>hsr_color/grey</name>
-            </script>
+            <!-- hsr_color/grey -->
+            <name>grey</name>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.3 0.3 0.3 1</diffuse>
+            <specular>0 0 0 1</specular>
+            <emissive>0 0 0 1</emissive>
+            <shading>gouraud</shading>
+            <receive_shadows>on</receive_shadows>
           </material>
         </visual>
         <collision name='collision_center_front_pole'>
@@ -255,10 +277,14 @@
             </cylinder>
           </geometry>
           <material>
-            <script>
-              <uri>model://base_materials/color/scripts</uri>
-              <name>hsr_color/grey</name>
-            </script>
+            <!-- hsr_color/grey -->
+            <name>grey</name>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.3 0.3 0.3 1</diffuse>
+            <specular>0 0 0 1</specular>
+            <emissive>0 0 0 1</emissive>
+            <shading>gouraud</shading>
+            <receive_shadows>on</receive_shadows>
           </material>
         </visual>
         <collision name='collision_center_back_pole'>
@@ -289,10 +315,14 @@
             </cylinder>
           </geometry>
           <material>
-            <script>
-              <uri>model://base_materials/color/scripts</uri>
-              <name>hsr_color/grey</name>
-            </script>
+            <!-- hsr_color/grey -->
+            <name>grey</name>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.3 0.3 0.3 1</diffuse>
+            <specular>0 0 0 1</specular>
+            <emissive>0 0 0 1</emissive>
+            <shading>gouraud</shading>
+            <receive_shadows>on</receive_shadows>
           </material>
         </visual>
         <collision name='collision_left_front_horizon_pole'>
@@ -323,10 +353,14 @@
             </cylinder>
           </geometry>
           <material>
-            <script>
-              <uri>model://base_materials/color/scripts</uri>
-              <name>hsr_color/grey</name>
-            </script>
+            <!-- hsr_color/grey -->
+            <name>grey</name>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.3 0.3 0.3 1</diffuse>
+            <specular>0 0 0 1</specular>
+            <emissive>0 0 0 1</emissive>
+            <shading>gouraud</shading>
+            <receive_shadows>on</receive_shadows>
           </material>
         </visual>
         <collision name='collision_left_front_vertical_pole'>
@@ -357,9 +391,11 @@
             </cylinder>
           </geometry>
           <material>
-            <script>
-              <name>Gazebo/Black</name>
-            </script>
+            <!-- Black -->
+            <ambient>0.0 0.0 0.0 1.0</ambient>
+            <diffuse>0.0 0.0 0.0 1.0</diffuse>
+            <specular>0.1 0.1 0.1 1.0</specular>
+            <shininess>5.0</shininess>
           </material>
         </visual>
         <collision name='collision_left_front_caster_r'>
@@ -390,9 +426,11 @@
             </cylinder>
           </geometry>
           <material>
-            <script>
-              <name>Gazebo/Black</name>
-            </script>
+            <!-- Black -->
+            <ambient>0.0 0.0 0.0 1.0</ambient>
+            <diffuse>0.0 0.0 0.0 1.0</diffuse>
+            <specular>0.1 0.1 0.1 1.0</specular>
+            <shininess>5.0</shininess>
           </material>
         </visual>
         <collision name='collision_left_front_caster_l'>
@@ -423,10 +461,14 @@
             </cylinder>
           </geometry>
           <material>
-            <script>
-              <uri>model://base_materials/color/scripts</uri>
-              <name>hsr_color/grey</name>
-            </script>
+            <!-- hsr_color/grey -->
+            <name>grey</name>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.3 0.3 0.3 1</diffuse>
+            <specular>0 0 0 1</specular>
+            <emissive>0 0 0 1</emissive>
+            <shading>gouraud</shading>
+            <receive_shadows>on</receive_shadows>
           </material>
         </visual>
         <collision name='collision_left_back_horizon_pole'>
@@ -457,10 +499,14 @@
             </cylinder>
           </geometry>
           <material>
-            <script>
-              <uri>model://base_materials/color/scripts</uri>
-              <name>hsr_color/grey</name>
-            </script>
+            <!-- hsr_color/grey -->
+            <name>grey</name>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.3 0.3 0.3 1</diffuse>
+            <specular>0 0 0 1</specular>
+            <emissive>0 0 0 1</emissive>
+            <shading>gouraud</shading>
+            <receive_shadows>on</receive_shadows>
           </material>
         </visual>
         <collision name='collision_left_back_vertical_pole'>
@@ -491,9 +537,11 @@
             </cylinder>
           </geometry>
           <material>
-            <script>
-              <name>Gazebo/Black</name>
-            </script>
+            <!-- Black -->
+            <ambient>0.0 0.0 0.0 1.0</ambient>
+            <diffuse>0.0 0.0 0.0 1.0</diffuse>
+            <specular>0.1 0.1 0.1 1.0</specular>
+            <shininess>5.0</shininess>
           </material>
         </visual>
         <collision name='collision_left_back_caster_r'>
@@ -524,9 +572,11 @@
             </cylinder>
           </geometry>
           <material>
-            <script>
-              <name>Gazebo/Black</name>
-            </script>
+            <!-- Black -->
+            <ambient>0.0 0.0 0.0 1.0</ambient>
+            <diffuse>0.0 0.0 0.0 1.0</diffuse>
+            <specular>0.1 0.1 0.1 1.0</specular>
+            <shininess>5.0</shininess>
           </material>
         </visual>
         <collision name='collision_left_back_caster_l'>

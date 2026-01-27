@@ -2,6 +2,11 @@
 Changelog for package tmc_gazebo_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+2.1.1 (2025-12-23)
+-------------------
+* 
+* Contributors: 
+
 2.1.0 (2025-07-29)
 -------------------
 * megaweb collision simplification

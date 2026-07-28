@@ -2,12 +2,11 @@
 <sdf version="1.4" xmlns:xacro="http://www.ros.org/wiki/xacro">
   <world name="default">
     <xacro:include filename="include/physics.xacro" />
-    <scene>
-        <shadows>0</shadows>
-    </scene>
-    <light name="sun" type="directional">
-      <cast_shadows>true</cast_shadows>
-      <pose>0 0 10 0 0 0</pose>
+
+    <!-- Lights !-->
+    <light name='sun' type='directional'>
+      <cast_shadows>1</cast_shadows>
+      <pose frame=''>0 0 10 0 -0 0</pose>
       <diffuse>0.8 0.8 0.8 1</diffuse>
       <specular>0.2 0.2 0.2 1</specular>
       <attenuation>
@@ -19,21 +18,22 @@
       <direction>-0.5 0.1 -0.9</direction>
     </light>
 
+    <!-- Ground !-->
     <model name="ground_plane">
       <static>true</static>
-      <pose>0 0 0 0 0 0</pose>
       <link name="link">
         <collision name="collision">
           <geometry>
             <plane>
-              <size>20 20 0.1</size>
+              <normal>0 0 1</normal>
             </plane>
           </geometry>
         </collision>
         <visual name="visual">
           <geometry>
             <plane>
-              <size>20 20 0.1</size>
+              <normal>0 0 1</normal>
+              <size>100 100</size>
             </plane>
           </geometry>
           <material>

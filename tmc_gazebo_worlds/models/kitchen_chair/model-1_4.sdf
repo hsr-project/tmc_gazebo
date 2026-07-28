@@ -55,8 +55,7 @@
               <length>0.35</length>
             </cylinder>
           </geometry>
-
-        </visual>          <material>
+          <material>
             <!-- base_materials/wood -->
             <name>wood</name>
             <ambient>1 1 1 1</ambient>
@@ -71,6 +70,7 @@
               </metal>
             </pbr>
           </material>
+        </visual>
         <collision name='collision_front_right_frame'>
           <pose>0.205 0.245 -0.155 0 0 0</pose>
           <geometry>

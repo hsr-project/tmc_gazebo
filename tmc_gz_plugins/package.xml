@@ -1,6 +1,6 @@
 <package format="3">
   <name>tmc_gz_plugins</name>
-  <version>2.1.0</version>
+  <version>3.0.0</version>
   <description>Plugins for gazebo</description>
   <maintainer email="xr-hsr-support@mail.toyota.co.jp">HSR Support</maintainer>
 
@@ -8,8 +8,8 @@
 
   <buildtool_depend>ament_cmake</buildtool_depend>
 
-  <depend>ignition-gazebo6</depend>
-  <depend>ignition-plugin</depend>
+  <depend>gz_plugin_vendor</depend>
+  <depend>gz_sim_vendor</depend>
 
   <export>
       <build_type>ament_cmake</build_type>
